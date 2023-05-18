@@ -1,0 +1,109 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3528,        101]
+NotebookOptionsPosition[      2502,         75]
+NotebookOutlinePosition[      2925,         91]
+CellTagsIndexPosition[      2882,         88]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"URLQueryEncode", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"\"\<name\>\"", "->", "\"\<John Doe\>\""}], ",", 
+    RowBox[{"\"\<age\>\"", "->", "23"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893414487299388*^9, 3.8934145020122924`*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"a78bdc83-6f48-4648-bd32-599c0a31bc70"],
+
+Cell[BoxData["\<\"name=John+Doe&age=23\"\>"], "Output",
+ CellChangeTimes->{3.893414502428296*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"518928e1-7679-44a3-84a9-aa6269858e90"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLQueryEncode", "[", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<name\>\"", "->", "\"\<John Doe\>\""}], ",", 
+    RowBox[{"\"\<age\>\"", "->", "23"}]}], "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893414487299388*^9, 3.8934145170515785`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"c1e386e3-9040-4616-a066-f40fd8de0e6d"],
+
+Cell[BoxData["\<\"name=John+Doe&age=23\"\>"], "Output",
+ CellChangeTimes->{3.893414517425172*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"0ece564a-91a1-46df-8027-23d7211f035d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLBuild", "[", 
+  RowBox[{"\"\<www.wolframalpha.com/input\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<i\>\"", "->", "\"\<derive sin(x)\>\""}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.893414523827484*^9, 3.893414537973184*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"5692ee77-e2bf-491c-8b28-5343c6724cec"],
+
+Cell[BoxData["\<\"www.wolframalpha.com/input?i=derive+sin%28x%29\"\>"], \
+"Output",
+ CellChangeTimes->{3.893414539196802*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"f7843c36-4f88-43dc-8ea2-375515b7ea8d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SystemOpen", "[", 
+  "\"\<www.wolframalpha.com/input?i=derive+sin%28x%29\>\"", "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[32]:=",ExpressionUUID->"2ba35397-a639-41ad-9088-4b8f87519582"]
+},
+WindowSize->{573., 574.8},
+WindowMargins->{{Automatic, -7.7999999999999545`}, {Automatic, 6.6}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fcaab6c4-4e4a-49a4-a919-1ee6e2b23ffc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 350, 7, 28, "Input",ExpressionUUID->"a78bdc83-6f48-4648-bd32-599c0a31bc70"],
+Cell[933, 31, 176, 2, 32, "Output",ExpressionUUID->"518928e1-7679-44a3-84a9-aa6269858e90"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1146, 38, 352, 7, 28, "Input",ExpressionUUID->"c1e386e3-9040-4616-a066-f40fd8de0e6d"],
+Cell[1501, 47, 176, 2, 32, "Output",ExpressionUUID->"0ece564a-91a1-46df-8027-23d7211f035d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1714, 54, 343, 7, 28, "Input",ExpressionUUID->"5692ee77-e2bf-491c-8b28-5343c6724cec"],
+Cell[2060, 63, 204, 3, 32, "Output",ExpressionUUID->"f7843c36-4f88-43dc-8ea2-375515b7ea8d"]
+}, Open  ]],
+Cell[2279, 69, 219, 4, 58, "Input",ExpressionUUID->"2ba35397-a639-41ad-9088-4b8f87519582"]
+}
+]
+*)
+
