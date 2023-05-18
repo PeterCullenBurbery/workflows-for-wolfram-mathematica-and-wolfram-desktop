@@ -1,0 +1,265 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9467,        257]
+NotebookOptionsPosition[      7243,        210]
+NotebookOutlinePosition[      7665,        226]
+CellTagsIndexPosition[      7622,        223]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData["obj"], "Input",
+ CellChangeTimes->{{3.8934146031113534`*^9, 3.893414603464795*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"e5c44b16-db52-43b8-b434-473516079b8d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/6af2d027-f63a-4a8e-911a-949f78087cea\"\
+", "https://www.wolframcloud.com/obj/6af2d027-f63a-4a8e-911a-949f78087cea"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/6af2d027-f63a-4a8e-911a-949f78087cea"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893414604191207*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"a963dbdb-2fb5-4c0d-ae5e-9363149cd24f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"obj", "=."}]], "Input",
+ CellChangeTimes->{{3.8934146164054794`*^9, 3.8934146173902855`*^9}},
+ CellLabel->"In[34]:=",ExpressionUUID->"d520b64a-9381-4f6e-9b61-5871f0d1c47c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CloudPut", "[", "myData", "]"}]}]], "Input",
+ CellChangeTimes->{{3.893414598634246*^9, 3.8934146022423534`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"55d0b531-7c6b-4346-9279-bc1945904c3d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/095e211e-4cd7-4a25-92b8-1ca9edbc56d7\"\
+", "https://www.wolframcloud.com/obj/095e211e-4cd7-4a25-92b8-1ca9edbc56d7"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/095e211e-4cd7-4a25-92b8-1ca9edbc56d7"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934146225363703`*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"a76a8ab8-62b1-48e8-a362-3001d62c9455"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Options", "[", 
+  RowBox[{"obj", ",", "Permissions"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893414626632035*^9, 3.893414631451329*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"cdbf68a2-b6a7-45eb-ad7d-991803b2f707"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"Permissions", "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Owner\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Read\"\>", ",", "\<\"Write\"\>", ",", "\<\"Execute\"\>"}], 
+      "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.893414631982477*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"874307f7-f047-4878-9c3e-50e2ac5ec047"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CloudPut", "[", 
+   RowBox[{"myData", ",", 
+    RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934146359758453`*^9, 3.8934146467638836`*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"a301ab6e-7d9b-4fab-818b-5ae5cfe6e1e8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/88301ba7-4317-4808-b891-4cd2973e2c36\"\
+", "https://www.wolframcloud.com/obj/88301ba7-4317-4808-b891-4cd2973e2c36"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/88301ba7-4317-4808-b891-4cd2973e2c36"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934146473599215`*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"027748a1-7ef4-4253-a457-effe7284e02b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Options", "[", 
+  RowBox[{"obj", ",", "Permissions"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893414651004158*^9, 3.8934146591485095`*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"bb486963-8feb-4d4f-9ba3-9f78aeb50fb2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"Permissions", "\[Rule]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"All\"\>", "\[Rule]", 
+      RowBox[{"{", "\<\"Read\"\>", "}"}]}], ",", 
+     RowBox[{"\<\"Owner\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"Read\"\>", ",", "\<\"Write\"\>", ",", "\<\"Execute\"\>"}],
+        "}"}]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.893414659657566*^9},
+ CellLabel->"Out[38]=",ExpressionUUID->"d71c5cb2-024c-4be6-9f1c-98ccef8cc0f4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CloudPut", "[", 
+   RowBox[{"myData", ",", 
+    RowBox[{"Permissions", "->", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<jdoe@wolfram.com\>\"", ",", "\"\<docs@wolfram.com\>\""}], 
+       "}"}], "->", "\"\<Read\>\""}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934146672664237`*^9, 3.8934146933105707`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"92d765a7-d41b-451e-999c-a863e524539e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CloudPut", "notparam", "\"Invalid parameters were specified.\"", 2, 40, 4, 
+   28308516767907859258, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.8934146901411266`*^9, 3.8934146957585697`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[40]:=",ExpressionUUID->"12d6438e-787d-4824-ae08-81d3d8fe2205"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{{3.8934146906501265`*^9, 3.8934146958567815`*^9}},
+ CellLabel->"Out[40]=",ExpressionUUID->"cd12fd20-dd43-4cae-a67f-c8391a5cb995"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", 
+     RowBox[{
+      RowBox[{"DateString", "[", "]"}], "&"}]}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.893414721384556*^9, 3.8934147328615313`*^9}},
+ CellLabel->"In[41]:=",ExpressionUUID->"1c065c1f-43dd-4692-b017-1d21e8f5929b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/4562a091-7403-4637-bd67-8075cef54242\"\
+", "https://www.wolframcloud.com/obj/4562a091-7403-4637-bd67-8075cef54242"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/4562a091-7403-4637-bd67-8075cef54242"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934147333805337`*^9},
+ CellLabel->"Out[41]=",ExpressionUUID->"dc32c5d5-6add-4e45-b9cd-8bac6d820eb7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetPermissions", "[", 
+  RowBox[{"obj", ",", "\"\<Public\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.893414740153577*^9, 3.893414745101914*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"9b3fd3d1-0d10-4ef4-b8e5-3d75a01a4435"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"All", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"\<\"Owner\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"Read\"\>", ",", "\<\"Write\"\>", ",", "\<\"Execute\"\>"}], 
+     "}"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8934147457609234`*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"70ec924f-6764-460f-b37b-fbdb31104a00"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cdc13b5f-194f-45f1-81ea-414d87580547"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 176, 2, 28, "Input",ExpressionUUID->"e5c44b16-db52-43b8-b434-473516079b8d"],
+Cell[759, 26, 518, 11, 85, "Output",ExpressionUUID->"a963dbdb-2fb5-4c0d-ae5e-9363149cd24f"]
+}, Open  ]],
+Cell[1292, 40, 196, 3, 28, "Input",ExpressionUUID->"d520b64a-9381-4f6e-9b61-5871f0d1c47c"],
+Cell[CellGroupData[{
+Cell[1513, 47, 238, 4, 28, "Input",ExpressionUUID->"55d0b531-7c6b-4346-9279-bc1945904c3d"],
+Cell[1754, 53, 520, 11, 85, "Output",ExpressionUUID->"a76a8ab8-62b1-48e8-a362-3001d62c9455"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2311, 69, 240, 4, 28, "Input",ExpressionUUID->"cdbf68a2-b6a7-45eb-ad7d-991803b2f707"],
+Cell[2554, 75, 384, 9, 32, "Output",ExpressionUUID->"874307f7-f047-4878-9c3e-50e2ac5ec047"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2975, 89, 313, 6, 28, "Input",ExpressionUUID->"a301ab6e-7d9b-4fab-818b-5ae5cfe6e1e8"],
+Cell[3291, 97, 520, 11, 85, "Output",ExpressionUUID->"027748a1-7ef4-4253-a457-effe7284e02b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3848, 113, 242, 4, 28, "Input",ExpressionUUID->"bb486963-8feb-4d4f-9ba3-9f78aeb50fb2"],
+Cell[4093, 119, 493, 12, 32, "Output",ExpressionUUID->"d71c5cb2-024c-4be6-9f1c-98ccef8cc0f4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4623, 136, 447, 10, 67, "Input",ExpressionUUID->"92d765a7-d41b-451e-999c-a863e524539e"],
+Cell[5073, 148, 358, 8, 28, "Message",ExpressionUUID->"12d6438e-787d-4824-ae08-81d3d8fe2205"],
+Cell[5434, 158, 183, 2, 32, "Output",ExpressionUUID->"cd12fd20-dd43-4cae-a67f-c8391a5cb995"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5654, 165, 378, 9, 28, "Input",ExpressionUUID->"1c065c1f-43dd-4692-b017-1d21e8f5929b"],
+Cell[6035, 176, 520, 11, 85, "Output",ExpressionUUID->"dc32c5d5-6add-4e45-b9cd-8bac6d820eb7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6592, 192, 250, 4, 28, "Input",ExpressionUUID->"9b3fd3d1-0d10-4ef4-b8e5-3d75a01a4435"],
+Cell[6845, 198, 382, 9, 32, "Output",ExpressionUUID->"70ec924f-6764-460f-b37b-fbdb31104a00"]
+}, Open  ]]
+}
+]
+*)
+
