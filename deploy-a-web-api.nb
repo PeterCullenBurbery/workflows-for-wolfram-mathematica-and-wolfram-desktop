@@ -1,0 +1,740 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     29095,        732]
+NotebookOptionsPosition[     26402,        677]
+NotebookOutlinePosition[     26823,        693]
+CellTagsIndexPosition[     26780,        690]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"cityDistance", "=", 
+  RowBox[{"APIFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<city1\>\"", "->", "\"\<City\>\""}], ",", 
+      RowBox[{"\"\<city2\>\"", "->", "\"\<City\>\""}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"QuantityMagnitude", "@", 
+      RowBox[{"TravelDistance", "[", 
+       RowBox[{"#city1", ",", "#city2"}], "]"}]}], "&"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.893413708455021*^9, 3.8934137510021496`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"8fc947fe-b012-4a13-8dc0-efc5f74a1735"],
+
+Cell[BoxData[
+ RowBox[{"APIFunction", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"city1\"\>", "\[Rule]", "\<\"City\"\>"}], ",", 
+     RowBox[{"\<\"city2\"\>", "\[Rule]", "\<\"City\"\>"}]}], "}"}], ",", 
+   RowBox[{
+    RowBox[{"QuantityMagnitude", "[", 
+     RowBox[{"TravelDistance", "[", 
+      RowBox[{"#city1", ",", "#city2"}], "]"}], "]"}], "&"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.893413751464162*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"4ea51749-14cc-4e86-86ca-e0b689610bda"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"co", "=", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{"cityDistance", ",", 
+    RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.893413755970063*^9, 3.8934137660748568`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"9a5ef161-b1fb-4197-8369-edb11a84f284"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-27c512c2a9e8\"\
+", "https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-27c512c2a9e8"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-27c512c2a9e8"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934137669438915`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"9924c5b4-d962-40bf-b1be-6d5266b24d41"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EmbedCode", "[", 
+  RowBox[{"co", ",", "\"\<Python\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.893413796377267*^9, 3.8934138014779444`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"efafa226-e7fd-4437-8504-8d692c70b4b3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  FrameBox[
+   PanelBox[
+    TagBox[GridBox[{
+       {
+        StyleBox["\<\"Embeddable Code\"\>", "ControlStyle",
+         StripOnInput->False,
+         FontSize->Larger,
+         FontWeight->Bold,
+         FontColor->GrayLevel[0.3]]},
+       {
+        StyleBox["\<\"Use the files and code below to call the Wolfram Cloud \
+function from Python:\"\>",
+         StripOnInput->False,
+         FontColor->RGBColor[0.23, 0.23, 0.23]]},
+       {
+        FrameBox[
+         TagBox[GridBox[{
+            {
+             TagBox[GridBox[{
+                {
+                 StyleBox["\<\"Dependencies\"\>", "ControlStyle",
+                  StripOnInput->False,
+                  FontWeight->Bold,
+                  FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                {
+                 StyleBox[
+                  TemplateBox[{"\[ThinSpace]", "\" \"", "\"Install the \"", 
+                    
+                    TemplateBox[{
+                    "\"wolframclient\"", 
+                    "https://pypi.org/project/wolframclient"}, 
+                    "HyperlinkURL"], "\" library.\""},
+                   "RowWithSeparators"],
+                  StripOnInput->False,
+                  FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                {
+                 InterpretationBox[
+                  TagBox[GridBox[{
+                    {""}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{0.1}}}],
+                   "Column"],
+                  Column[{}, Spacings -> 0.1]]},
+                {
+                 TagBox[
+                  DynamicModuleBox[{Typeset`var$$ = False}, 
+                   InterpretationBox[
+                    StyleBox[
+                    PaneSelectorBox[{False->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], 
+                    StyleBox["\<\"Installation instructions:\"\>",
+                    StripOnInput->False,
+                    FontWeight->Bold,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}], True->GridBox[{
+                    {
+                    OpenerBox[Dynamic[Typeset`var$$],
+                    Appearance->Automatic,
+                    AutoAction->False,
+                    ContinuousAction->False,
+                    Enabled->Automatic], 
+                    StyleBox["\<\"Installation instructions:\"\>",
+                    StripOnInput->False,
+                    FontWeight->Bold,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                    {"", 
+                    PaneBox[
+                    TagBox[GridBox[{
+                    {
+                    
+                    StyleBox["\<\"The Wolfram client library for Python is \
+conveniently installed using command:\"\>",
+                    StripOnInput->False,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                    {
+                    TagBox[GridBox[{
+                    {
+                    TemplateBox[{
+                    StyleBox[
+                    "\"$ \"", FontFamily -> "Courier", Selectable -> False, 
+                    FontColor -> RGBColor[0.33, 0.33, 0.33], StripOnInput -> 
+                    False], 
+                    StyleBox[
+                    "\"python -m pip install wolframclient\"", FontFamily -> 
+                    "Courier", FontColor -> RGBColor[0.33, 0.33, 0.33], 
+                    StripOnInput -> False]},
+                    "RowDefault"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{0.3}}}],
+                    "Column"]}
+                    },
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                    "Column"],
+                    ImageMargins->0]}
+                    },
+                    AutoDelete->False,
+                    BaselinePosition->{1, 1},
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    GridBoxBackground->{"Columns" -> {{Automatic}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+                    
+                    GridBoxSpacings->{
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}]}, Dynamic[
+                    Typeset`var$$],
+                    Alignment->Automatic,
+                    BaseStyle->{},
+                    BaselinePosition->Baseline,
+                    DefaultBaseStyle->"OpenerView",
+                    ImageMargins->0,
+                    ImageSize->Automatic],
+                    Deployed->False,
+                    StripOnInput->False],
+                    OpenerView[{
+                    Style[
+                    "Installation instructions:", FontWeight -> Bold, 
+                    FontColor -> RGBColor[0.33, 0.33, 0.33]], 
+                    Column[{
+                    Style[
+                    "The Wolfram client library for Python is conveniently \
+installed using command:", FontColor -> RGBColor[0.33, 0.33, 0.33]], 
+                    Column[{
+                    Row[{
+                    Style[
+                    "$ ", FontFamily -> "Courier", Selectable -> False, 
+                    FontColor -> RGBColor[0.33, 0.33, 0.33]], 
+                    Style[
+                    "python -m pip install wolframclient", FontFamily -> 
+                    "Courier", FontColor -> RGBColor[0.33, 0.33, 0.33]]}]}, 
+                    Spacings -> 0.3]}]}, False]],
+                   DynamicModuleValues:>{}],
+                  Setting[#, {0}]& ]}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               
+               GridBoxSpacings->{
+                "Columns" -> {{0}}, "Rows" -> {0.7, 0.3, 0.3, 0.5, 0.3}}],
+              "Column"]}
+           },
+           AutoDelete->False,
+           GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
+           GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}}],
+          "Grid"],
+         Background->RGBColor[0.96, 0.96, 0.96],
+         FrameMargins->{{10, 12}, {10, 10}},
+         FrameStyle->RGBColor[0.69, 0.69, 0.69],
+         StripOnInput->False]},
+       {
+        FrameBox[
+         TagBox[GridBox[{
+            {
+             TagBox[GridBox[{
+                {
+                 TagBox[GridBox[{
+                    {
+                    StyleBox["\<\"Code\"\>", "ControlStyle",
+                    StripOnInput->False,
+                    FontWeight->Bold,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                    {
+                    StyleBox["\<\"\"\>",
+                    StripOnInput->False,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]}
+                   },
+                   DefaultBaseStyle->"Column",
+                   GridBoxAlignment->{"Columns" -> {{Left}}},
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Column"], 
+                 ItemBox[
+                  ButtonBox["\<\"Copy to Clipboard\"\>",
+                   
+                   Appearance:>FEPrivate`FrontEndResource[
+                    "FEExpressions", "GrayButtonNinePatchAppearance"],
+                   BaseStyle->"DialogStyle",
+                   
+                   ButtonFunction:>CopyToClipboard[
+                    "# -*- coding: utf-8 -*-\n\nfrom __future__ import \
+absolute_import, print_function, unicode_literals\nfrom \
+wolframclient.evaluation import WolframCloudSession\n\ndef call(city1, \
+city2):\n    \"\"\" Call the API using function input parameter values.\n    \
+If the API was deployed with an export formats set to JSON or WXF, the result \
+is often a native Python type.\n    \"\"\"\n    with WolframCloudSession() as \
+session:\n        api_response = \
+session.call('https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-\
+27c512c2a9e8', {'city1' : city1, 'city2' : city2})\n        return \
+api_response.get()\n"],
+                   Evaluator->Automatic,
+                   FrameMargins->{{10, 10}, {0, 0}},
+                   ImageSize->Automatic,
+                   Method->"Queued"],
+                  Alignment->Right,
+                  StripOnInput->False]}
+               },
+               AutoDelete->False,
+               GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
+               GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}}],
+              "Grid"]},
+            {
+             FrameBox[
+              PaneBox[Cell["\<\
+# -*- coding: utf-8 -*-
+
+from __future__ import absolute_import, print_function, unicode_literals
+from wolframclient.evaluation import WolframCloudSession
+
+def call(city1, city2):
+    \"\"\" Call the API using function input parameter values.
+    If the API was deployed with an export formats set to JSON or WXF, the \
+result is often a native Python type.
+    \"\"\"
+    with WolframCloudSession() as session:
+        api_response = \
+session.call('https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-\
+27c512c2a9e8', {'city1' : city1, 'city2' : city2})
+        return api_response.get()
+\
+\>",
+                Editable->False,
+                Deployed->False,ExpressionUUID->
+                "5f5eb189-5297-468c-a666-f6909529af89"],
+               AppearanceElements->{},
+               ImageSize->{
+                 Scaled[1], 300},
+               Scrollbars->Automatic],
+              Background->GrayLevel[1],
+              BaseStyle->"StandardForm",
+              FrameStyle->RGBColor[0.69, 0.69, 0.69],
+              StripOnInput->False]}
+           },
+           DefaultBaseStyle->"Column",
+           GridBoxAlignment->{"Columns" -> {{Left}}},
+           GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}},
+           GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {0.2, {0.5}}}],
+          "Column"],
+         Background->RGBColor[0.96, 0.96, 0.96],
+         FrameMargins->{{14, 14}, {14, 10}},
+         FrameStyle->RGBColor[0.69, 0.69, 0.69],
+         StripOnInput->False]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+      GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {0.3, 0.4, 0.8, 1.5}}],
+     "Column"],
+    Background->RGBColor[0.87, 0.87, 0.87],
+    BaseStyle->{"Deploy"},
+    ImageSize->630],
+   Background->RGBColor[0.87, 0.87, 0.87],
+   FrameMargins->{{2, 2}, {1, 1}},
+   FrameStyle->RGBColor[0.76, 0.76, 0.76],
+   RoundingRadius->6,
+   StripOnInput->False],
+  EmbeddingObject[<|
+   "EnvironmentName" -> "Python", 
+    "CodeSection" -> <|
+     "Content" -> 
+      "# -*- coding: utf-8 -*-\n\nfrom __future__ import absolute_import, \
+print_function, unicode_literals\nfrom wolframclient.evaluation import \
+WolframCloudSession\n\ndef call(city1, city2):\n    \"\"\" Call the API using \
+function input parameter values.\n    If the API was deployed with an export \
+formats set to JSON or WXF, the result is often a native Python type.\n    \"\
+\"\"\n    with WolframCloudSession() as session:\n        api_response = \
+session.call('https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-\
+27c512c2a9e8', {'city1' : city1, 'city2' : city2})\n        return \
+api_response.get()\n", "Title" -> Automatic, "Filename" -> 
+      "WolframCloud.py"|>, 
+    "DependenciesSection" -> <|
+     "InstallationList" -> {}, "Description" -> Row[{"Install the ", 
+         Hyperlink["wolframclient", "https://pypi.org/project/wolframclient"],
+          " library."}, " "], 
+      "HowTo" -> <|
+       "InstallationInstuctions" -> 
+        "The Wolfram client library for Python is conveniently installed \
+using command:", 
+        "InstallationCommands" -> {"python -m pip install wolframclient"}|>|>,
+     "CloudObject" -> 
+    CloudObject[
+     "https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-27c512c2a9e8"]|>\
+]]], "Output",
+ CellChangeTimes->{3.893413802087987*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"9ff739b1-70cc-4e02-a454-ac5f61098f16"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"formatTheOutPut", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<text\>\"", "->", "\"\<String\>\""}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"WordCloud", "[", "#text", "]"}], "&"}], ",", "\"\<PNG\>\""}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.893413828885584*^9, 3.893413855063122*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"e2143020-feb0-465a-b1af-0ec7fca9cba5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{
+  "\"\<https://www.wolframcloud.com/obj/7fa48eba-cc88-4428-a41d-27c512c2a9e8\>\
+\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\"\<city1\>\"", "->", "\"\<Chicago\>\""}], ",", 
+     RowBox[{"\"\<city2\>\"", "->", "\"\<Miami\>\""}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.893413859023301*^9, 3.8934138965284386`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"095d1349-92e0-45f2-9216-1f1056b6545c"],
+
+Cell[BoxData["\<\"1378.265702671399\"\>"], "Output",
+ CellChangeTimes->{3.893413897886885*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"a7f0fcee-fc04-4deb-b698-b601aaa1c66a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mnemonicURL", "=", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{
+    RowBox[{"APIFunction", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<n\>\"", "->", "\"\<Number\>\""}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"#n", "+", "1"}], "&"}]}], "]"}], ",", 
+    RowBox[{"CloudObject", "[", "\"\<ops/increment\>\"", "]"}], ",", 
+    RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934139228259683`*^9, 3.893413957098069*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"6775bc0a-8977-4230-b6ec-a78b73437091"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/burbery1/ops/increment\"", 
+     "https://www.wolframcloud.com/obj/burbery1/ops/increment"},
+    "HyperlinkURL"], "]"}],
+  CloudObject["https://www.wolframcloud.com/obj/burbery1/ops/increment"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934139576630354`*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"5709351c-1c41-4501-952c-d520617cd715"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{
+  "\"\<https://www.wolframcloud.com/objects/burbery1/ops/increment\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<n\>\"", "->", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934139641079087`*^9, 3.89341399417902*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"ea481b9d-e465-4e8e-8257-a4cb01065f21"],
+
+Cell[BoxData["\<\"2\"\>"], "Output",
+ CellChangeTimes->{3.89341399474702*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"479e2fb5-ebc3-4758-9997-696b17ca6e6e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{"cityDistance", ",", 
+    RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934139995786057`*^9, 3.893414009482831*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"42c86a57-e96b-425b-a38f-0e63ecc4ca5a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/6af2d027-f63a-4a8e-911a-949f78087cea\"\
+", "https://www.wolframcloud.com/obj/6af2d027-f63a-4a8e-911a-949f78087cea"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/6af2d027-f63a-4a8e-911a-949f78087cea"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893414010010754*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"f0905fba-82e2-4e5d-9c6b-70bf532bc8e6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLShorten", "[", "co", "]"}]], "Input",
+ CellChangeTimes->{{3.893414010794788*^9, 3.893414012827898*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"310c890e-7d2a-4506-b8cf-e13b7f365e79"],
+
+Cell[BoxData["\<\"https://wolfr.am/1dvr62Ct5\"\>"], "Output",
+ CellChangeTimes->{3.893414013570223*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"0cd3a56a-693e-4639-88fc-e99d7ea2861f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{
+   RowBox[{"URLShorten", "[", "co", "]"}], "<>", 
+   "\"\<?city1=Chicago&city2=Miami\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934140172656736`*^9, 3.8934140264227324`*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"299dbc7e-082d-45aa-a6aa-73b567beab84"],
+
+Cell[BoxData["\<\"1378.265702671399\"\>"], "Output",
+ CellChangeTimes->{3.8934140284806013`*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"39b2f3d0-0e88-47ad-b29b-7bf459f78c55"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"cityTime", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", "\"\<City\>\""}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"ClockGauge", "[", 
+       RowBox[{"LocalTime", "[", "#city", "]"}], "]"}], "&"}], ",", 
+     "\"\<PNG\>\""}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8934140358879433`*^9, 3.8934140625894356`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"6f17f92b-d492-4c56-b4fd-971b7eeb3a98"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EmbedCode", "[", 
+  RowBox[{"CloudDeploy", "[", "cityTime", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934140677298565`*^9, 3.893414074505942*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"e1bf9424-fecc-4666-8500-d0dab012312e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  FrameBox[
+   PanelBox[
+    TagBox[GridBox[{
+       {
+        StyleBox["\<\"Embeddable Code\"\>", "ControlStyle",
+         StripOnInput->False,
+         FontSize->Larger,
+         FontWeight->Bold,
+         FontColor->GrayLevel[0.3]]},
+       {
+        StyleBox["\<\"Use the code below to call the Wolfram Cloud function \
+from HTML:\"\>",
+         StripOnInput->False,
+         FontColor->RGBColor[0.23, 0.23, 0.23]]},
+       {
+        FrameBox[
+         TagBox[GridBox[{
+            {
+             TagBox[GridBox[{
+                {
+                 TagBox[GridBox[{
+                    {
+                    StyleBox["\<\"Code\"\>", "ControlStyle",
+                    StripOnInput->False,
+                    FontWeight->Bold,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                    {
+                    StyleBox["\<\"\"\>",
+                    StripOnInput->False,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]}
+                   },
+                   DefaultBaseStyle->"Column",
+                   GridBoxAlignment->{"Columns" -> {{Left}}},
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Column"], 
+                 ItemBox[
+                  ButtonBox["\<\"Copy to Clipboard\"\>",
+                   
+                   Appearance:>FEPrivate`FrontEndResource[
+                    "FEExpressions", "GrayButtonNinePatchAppearance"],
+                   BaseStyle->"DialogStyle",
+                   
+                   ButtonFunction:>CopyToClipboard[
+                    "<iframe \
+src=\"https://www.wolframcloud.com/obj/d5b1a83b-2109-41b2-aa72-f37cbfebaee5?_\
+embed=iframe\" width=\"600\" height=\"800\"></iframe>"],
+                   Evaluator->Automatic,
+                   FrameMargins->{{10, 10}, {0, 0}},
+                   ImageSize->Automatic,
+                   Method->"Queued"],
+                  Alignment->Right,
+                  StripOnInput->False]}
+               },
+               AutoDelete->False,
+               GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
+               GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}}],
+              "Grid"]},
+            {
+             FrameBox[
+              PaneBox[Cell["\<\
+<iframe src=\"https://www.wolframcloud.com/obj/d5b1a83b-2109-41b2-aa72-\
+f37cbfebaee5?_embed=iframe\" width=\"600\" height=\"800\"></iframe>\
+\>",
+                Editable->False,
+                Deployed->False,ExpressionUUID->
+                "8f697592-a6c5-444b-9b1b-7f2615b7a245"],
+               AppearanceElements->{},
+               ImageSize->{
+                 Scaled[1], 60},
+               Scrollbars->Automatic],
+              Background->GrayLevel[1],
+              BaseStyle->"StandardForm",
+              FrameStyle->RGBColor[0.69, 0.69, 0.69],
+              StripOnInput->False]}
+           },
+           DefaultBaseStyle->"Column",
+           GridBoxAlignment->{"Columns" -> {{Left}}},
+           GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}},
+           GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {0.2, {0.5}}}],
+          "Column"],
+         Background->RGBColor[0.96, 0.96, 0.96],
+         FrameMargins->{{14, 14}, {14, 10}},
+         FrameStyle->RGBColor[0.69, 0.69, 0.69],
+         StripOnInput->False]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+      GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {0.3, 0.4, 0.8, 1.5}}],
+     "Column"],
+    Background->RGBColor[0.87, 0.87, 0.87],
+    BaseStyle->{"Deploy"},
+    ImageSize->630],
+   Background->RGBColor[0.87, 0.87, 0.87],
+   FrameMargins->{{2, 2}, {1, 1}},
+   FrameStyle->RGBColor[0.76, 0.76, 0.76],
+   RoundingRadius->6,
+   StripOnInput->False],
+  EmbeddingObject[<|
+   "EnvironmentName" -> "HTML", 
+    "CodeSection" -> <|
+     "Content" -> 
+      "<iframe src=\"https://www.wolframcloud.com/obj/d5b1a83b-2109-41b2-aa72-\
+f37cbfebaee5?_embed=iframe\" width=\"600\" height=\"800\"></iframe>", "Title" -> 
+      Automatic, "Filename" -> "cloudembed.html"|>, "CloudObject" -> 
+    CloudObject[
+     "https://www.wolframcloud.com/obj/d5b1a83b-2109-41b2-aa72-f37cbfebaee5"]|>\
+]]], "Output",
+ CellChangeTimes->{3.8934140752722716`*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"f3117ef3-1b67-404c-ac38-a9dcc02f920b"]
+}, Open  ]]
+},
+WindowSize->{568.8, 579.6},
+WindowMargins->{{Automatic, 1.2000000000000455`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5e1b3d63-91f4-4308-8cd2-dc7d3c3eb80e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 567, 13, 48, "Input",ExpressionUUID->"8fc947fe-b012-4a13-8dc0-efc5f74a1735"],
+Cell[1150, 37, 517, 13, 52, "Output",ExpressionUUID->"4ea51749-14cc-4e86-86ca-e0b689610bda"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1704, 55, 319, 6, 28, "Input",ExpressionUUID->"9a5ef161-b1fb-4197-8369-edb11a84f284"],
+Cell[2026, 63, 520, 11, 85, "Output",ExpressionUUID->"9924c5b4-d962-40bf-b1be-6d5266b24d41"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2583, 79, 246, 4, 28, "Input",ExpressionUUID->"efafa226-e7fd-4437-8504-8d692c70b4b3"],
+Cell[2832, 85, 13645, 321, 541, "Output",ExpressionUUID->"9ff739b1-70cc-4e02-a454-ac5f61098f16"]
+}, Open  ]],
+Cell[16492, 409, 458, 11, 48, "Input",ExpressionUUID->"e2143020-feb0-465a-b1af-0ec7fca9cba5"],
+Cell[CellGroupData[{
+Cell[16975, 424, 470, 11, 67, "Input",ExpressionUUID->"095d1349-92e0-45f2-9216-1f1056b6545c"],
+Cell[17448, 437, 173, 2, 32, "Output",ExpressionUUID->"a7f0fcee-fc04-4deb-b698-b601aaa1c66a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17658, 444, 581, 13, 48, "Input",ExpressionUUID->"6775bc0a-8977-4230-b6ec-a78b73437091"],
+Cell[18242, 459, 479, 10, 56, "Output",ExpressionUUID->"5709351c-1c41-4501-952c-d520617cd715"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18758, 474, 359, 7, 67, "Input",ExpressionUUID->"ea481b9d-e465-4e8e-8257-a4cb01065f21"],
+Cell[19120, 483, 156, 2, 32, "Output",ExpressionUUID->"479e2fb5-ebc3-4758-9997-696b17ca6e6e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19313, 490, 320, 6, 28, "Input",ExpressionUUID->"42c86a57-e96b-425b-a38f-0e63ecc4ca5a"],
+Cell[19636, 498, 518, 11, 85, "Output",ExpressionUUID->"f0905fba-82e2-4e5d-9c6b-70bf532bc8e6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20191, 514, 209, 3, 28, "Input",ExpressionUUID->"310c890e-7d2a-4506-b8cf-e13b7f365e79"],
+Cell[20403, 519, 182, 2, 32, "Output",ExpressionUUID->"0cd3a56a-693e-4639-88fc-e99d7ea2861f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20622, 526, 312, 6, 28, "Input",ExpressionUUID->"299dbc7e-082d-45aa-a6aa-73b567beab84"],
+Cell[20937, 534, 175, 2, 32, "Output",ExpressionUUID->"39b2f3d0-0e88-47ad-b29b-7bf459f78c55"]
+}, Open  ]],
+Cell[21127, 539, 496, 12, 48, "Input",ExpressionUUID->"6f17f92b-d492-4c56-b4fd-971b7eeb3a98"],
+Cell[CellGroupData[{
+Cell[21648, 555, 254, 4, 28, "Input",ExpressionUUID->"e1bf9424-fecc-4666-8500-d0dab012312e"],
+Cell[21905, 561, 4481, 113, 207, "Output",ExpressionUUID->"f3117ef3-1b67-404c-ac38-a9dcc02f920b"]
+}, Open  ]]
+}
+]
+*)
+
