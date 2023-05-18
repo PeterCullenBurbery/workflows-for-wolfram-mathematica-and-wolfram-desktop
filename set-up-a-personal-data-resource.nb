@@ -1,0 +1,2979 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    148352,       2971]
+NotebookOptionsPosition[    147526,       2949]
+NotebookOutlinePosition[    147948,       2965]
+CellTagsIndexPosition[    147905,       2962]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"ExampleData", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Dataset\>\"", ",", "\"\<Planets\>\""}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934155935489655`*^9, 3.893415611188781*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"ceeebb87-b398-4c77-b525-c3c6004a1695"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> <|
+      "Mercury" -> <|
+        "Mass" -> Quantity[3.30104`6.*^23, "Kilograms"], "Radius" -> 
+         Quantity[2439.7`5., "Kilometers"], "Moons" -> <||>|>, 
+       "Venus" -> <|
+        "Mass" -> Quantity[4.867320000000000000000001`6.*^24, "Kilograms"], 
+         "Radius" -> Quantity[6051.85`5., "Kilometers"], "Moons" -> <||>|>, 
+       "Earth" -> <|
+        "Mass" -> Quantity[5.9721986`8.*^24, "Kilograms"], "Radius" -> 
+         Quantity[6367.4446571000000000001`8.299868708313456, "Kilometers"], 
+         "Moons" -> <|
+          "Moon" -> <|
+            "Mass" -> Quantity[
+              7.3459006322855173653772`4.995678626217362*^22, "Kilograms"], 
+             "Radius" -> Quantity[1737.5`5., "Kilometers"]|>|>|>, 
+       "Mars" -> <|
+        "Mass" -> Quantity[6.41693`6.*^23, "Kilograms"], "Radius" -> 
+         Quantity[3385.595`4.298042852900571, "Kilometers"], 
+         "Moons" -> <|
+          "Phobos" -> <|
+            "Mass" -> Quantity[
+              1.0724880884600402`3.9586073148417724*^16, "Kilograms"], 
+             "Radius" -> Quantity[11.1`3., "Kilometers"]|>, 
+           "Deimos" -> <|
+            "Mass" -> Quantity[
+              1.468340774924336`1.9995659225206786*^15, "Kilograms"], 
+             "Radius" -> Quantity[6.2`2., "Kilometers"]|>|>|>, 
+       "Jupiter" -> <|
+        "Mass" -> Quantity[1.89813`6.*^27, "Kilograms"], "Radius" -> 
+         Quantity[69173.`5., "Kilometers"], 
+         "Moons" -> <|
+          "Metis" -> <|
+            "Mass" -> Quantity[
+              1.19864553055047796`0.9999565727231415*^17, "Kilograms"], 
+             "Radius" -> Quantity[21.5`3., "Kilometers"]|>, 
+           "Adrastea" -> <|
+            "Mass" -> Quantity[
+              7.491534565940487`0.9999565727231415*^15, "Kilograms"], 
+             "Radius" -> Quantity[8.2`2., "Kilometers"]|>, 
+           "Amalthea" -> <|
+            "Mass" -> Quantity[
+              2.067663540199574478`2.995678626217367*^18, "Kilograms"], 
+             "Radius" -> Quantity[83.45`4., "Kilometers"]|>, 
+           "Thebe" -> <|
+            "Mass" -> Quantity[
+              1.49830691318809745`1.9995659225206872*^18, "Kilograms"], 
+             "Radius" -> Quantity[49.3`3., "Kilometers"]|>, 
+           "Io" -> <|
+            "Mass" -> Quantity[
+              8.9297833448203530011087`4.995678626217362*^22, "Kilograms"], 
+             "Radius" -> Quantity[1821.6`5., "Kilometers"]|>, 
+           "Europa" -> <|
+            "Mass" -> Quantity[
+              4.7986859848371340385365`4.995678626217362*^22, "Kilograms"], 
+             "Radius" -> Quantity[1560.8`5., "Kilometers"]|>, 
+           "Ganymede" -> <|
+            "Mass" -> Quantity[
+              1.48150100386563183602529`4.995678626217362*^23, "Kilograms"], 
+             "Radius" -> Quantity[2631.2`5., "Kilometers"]|>, 
+           "Callisto" -> <|
+            "Mass" -> Quantity[
+              1.07567783404752629528633`4.995678626217362*^23, "Kilograms"], 
+             "Radius" -> Quantity[2410.3`5., "Kilometers"]|>, 
+           "Themisto" -> <|
+            "Mass" -> Quantity[
+              6.89221180066526`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[4.`2., "Kilometers"]|>, 
+           "Leda" -> <|
+            "Mass" -> Quantity[
+              1.0937640466273112`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[10.`2., "Kilometers"]|>, 
+           "Himalia" -> <|
+            "Mass" -> Quantity[
+              6.742381109346438525`1.999565922520683*^18, "Kilograms"], 
+             "Radius" -> Quantity[85.`2., "Kilometers"]|>, 
+           "Lysithea" -> <|
+            "Mass" -> Quantity[
+              6.2928890353900092`1.999565922520683*^16, "Kilograms"], 
+             "Radius" -> Quantity[18.`2., "Kilometers"]|>, 
+           "Elara" -> <|
+            "Mass" -> Quantity[
+              8.6901800964909652`1.9995659225206872*^17, "Kilograms"], 
+             "Radius" -> Quantity[43.`2., "Kilometers"]|>, 
+           "S/2000 J11" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "S/2003 J12" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "Carpo" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Euporie" -> <|
+            "Mass" -> Quantity[
+              1.4983069131881`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "S/2003 J3" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "S/2003 J18" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Orthosie" -> <|
+            "Mass" -> Quantity[
+              1.4983069131881`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "Euanthe" -> <|
+            "Mass" -> Quantity[
+              4.4949207395643`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.5`2., "Kilometers"]|>, 
+           "Harpalyke" -> <|
+            "Mass" -> Quantity[
+              1.19864553055047`0.9999565727231415*^14, "Kilograms"], "Radius" -> 
+             Quantity[2.2`2., "Kilometers"]|>, 
+           "Praxidike" -> <|
+            "Mass" -> Quantity[
+              4.34509004824548`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[3.4`2., "Kilometers"]|>, 
+           "Thyone" -> <|
+            "Mass" -> Quantity[
+              8.9898414791287`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "S/2003 J16" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Iocaste" -> <|
+            "Mass" -> Quantity[
+              1.94779898714453`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[2.6`2., "Kilometers"]|>, 
+           "Mneme" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Hermippe" -> <|
+            "Mass" -> Quantity[
+              8.9898414791287`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Thelxinoe" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Helike" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[4.`2., "Kilometers"]|>, 
+           "Ananke" -> <|
+            "Mass" -> Quantity[
+              2.9966138263761948`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[14.`2., "Kilometers"]|>, 
+           "S/2003 J15" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Eurydome" -> <|
+            "Mass" -> Quantity[
+              4.4949207395643`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.5`2., "Kilometers"]|>, 
+           "Arche" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[1.5`2., "Kilometers"]|>, 
+           "Herse" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Pasithee" -> <|
+            "Mass" -> Quantity[
+              1.4983069131881`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "S/2003 J10" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Chaldene" -> <|
+            "Mass" -> Quantity[
+              7.4915345659396`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.9`2., "Kilometers"]|>, 
+           "Isonoe" -> <|
+            "Mass" -> Quantity[
+              7.4915345659396`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.9`2., "Kilometers"]|>, 
+           "Erinome" -> <|
+            "Mass" -> Quantity[
+              4.4949207395643`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.6`2., "Kilometers"]|>, 
+           "Kale" -> <|
+            "Mass" -> Quantity[
+              1.4983069131881`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "Aitne" -> <|
+            "Mass" -> Quantity[
+              4.4949207395643`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.5`2., "Kilometers"]|>, 
+           "Taygete" -> <|
+            "Mass" -> Quantity[
+              1.6481376045069`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[2.5`2., "Kilometers"]|>, 
+           "S/2003 J9" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "Carme" -> <|
+            "Mass" -> Quantity[
+              1.31851008360552575`1.9995659225206786*^17, "Kilograms"], 
+             "Radius" -> Quantity[23.`2., "Kilometers"]|>, 
+           "Sponde" -> <|
+            "Mass" -> Quantity[
+              1.4983069131881`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[1.`2., "Kilometers"]|>, 
+           "Megaclite" -> <|
+            "Mass" -> Quantity[
+              2.09762967846334`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[2.7`2., "Kilometers"]|>, 
+           "S/2003 J5" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[4.`2., "Kilometers"]|>, 
+           "S/2003 J19" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "S/2003 J23" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Kalyke" -> <|
+            "Mass" -> Quantity[
+              1.94779898714453`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[2.6`2., "Kilometers"]|>, 
+           "Kore" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Pasiphae" -> <|
+            "Mass" -> Quantity[
+              2.9966138263761949`1.9995659225206786*^17, "Kilograms"], 
+             "Radius" -> Quantity[30.`2., "Kilometers"]|>, 
+           "Eukelade" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[4.`2., "Kilometers"]|>, 
+           "S/2003 J4" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Sinope" -> <|
+            "Mass" -> Quantity[
+              7.4915345659404873`1.9995659225206786*^16, "Kilograms"], 
+             "Radius" -> Quantity[19.`2., "Kilometers"]|>, 
+           "Hegemone" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Aoede" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[4.`2., "Kilometers"]|>, 
+           "Kallichore" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Autonoe" -> <|
+            "Mass" -> Quantity[
+              8.9898414791287`0.9999565727231415*^13, "Kilograms"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Callirrhoe" -> <|
+            "Mass" -> Quantity[
+              8.69018009649097`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[4.3`2., "Kilometers"]|>, 
+           "Cyllene" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "S/2003 J2" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>|>|>, 
+       "Saturn" -> <|
+        "Mass" -> Quantity[5.68319`6.*^26, "Kilograms"], "Radius" -> 
+         Quantity[57316.`5., "Kilometers"], 
+         "Moons" -> <|
+          "Tarqeq" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.5`2., "Kilometers"]|>, 
+           "Pan" -> <|
+            "Mass" -> Quantity[
+              4.944412813520729`1.9995659225206872*^15, "Kilograms"], 
+             "Radius" -> Quantity[12.8`3., "Kilometers"]|>, 
+           "Daphnis" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.9`2., "Kilometers"]|>, 
+           "Atlas" -> <|
+            "Mass" -> Quantity[
+              2.097629678463337`1.9995659225206786*^15, "Kilograms"], 
+             "Radius" -> Quantity[10.`2., "Kilometers"]|>, 
+           "Prometheus" -> <|
+            "Mass" -> Quantity[
+              1.86689041383236942`3.9586073148417764*^17, "Kilograms"], 
+             "Radius" -> Quantity[46.8`3., "Kilometers"]|>, 
+           "Pandora" -> <|
+            "Mass" -> Quantity[
+              1.49081537862215657`2.9956786262173587*^17, "Kilograms"], 
+             "Radius" -> Quantity[40.6`3., "Kilometers"]|>, 
+           "Epimetheus" -> <|
+            "Mass" -> Quantity[
+              5.25905726529022205`2.9956786262173543*^17, "Kilograms"], 
+             "Radius" -> Quantity[58.3`3., "Kilometers"]|>, 
+           "Janus" -> <|
+            "Mass" -> Quantity[
+              1.896856552096131371`3.9586073148417764*^18, "Kilograms"], 
+             "Radius" -> Quantity[90.4`3., "Kilometers"]|>, 
+           "Aegaeon" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[0.25`2., "Kilometers"]|>, 
+           "Mimas" -> <|
+            "Mass" -> Quantity[
+              3.7907164903658865482`3.9586073148417764*^19, "Kilograms"], 
+             "Radius" -> Quantity[198.8`4., "Kilometers"]|>, 
+           "Methone" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[1.6`2., "Kilometers"]|>, 
+           "Anthe" -> <|
+            "Mass" -> Quantity[5.`1.*^12, "Kilograms"], "Radius" -> 
+             Quantity[1.`1., "Kilometers"]|>, 
+           "Pallene" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.6`2., "Kilometers"]|>, 
+           "Enceladus" -> <|
+            "Mass" -> Quantity[
+              1.08027928440861826137`3.9586073148417764*^20, "Kilograms"], 
+             "Radius" -> Quantity[252.3`4., "Kilometers"]|>, 
+           "Tethys" -> <|
+            "Mass" -> Quantity[
+              6.17452278924814959099`4.6989700043360205*^20, "Kilograms"], 
+             "Radius" -> Quantity[536.3`4., "Kilometers"]|>, 
+           "Calypso" -> <|
+            "Mass" -> Quantity[
+              3.595936591651433`1.9995659225206872*^15, "Kilograms"], 
+             "Radius" -> Quantity[9.5`2., "Kilometers"]|>, 
+           "Telesto" -> <|
+            "Mass" -> Quantity[
+              7.191873183302868`1.9995659225206872*^15, "Kilograms"], 
+             "Radius" -> Quantity[12.`2., "Kilometers"]|>, 
+           "Polydeuces" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[1.2`2., "Kilometers"]|>, 
+           "Dione" -> <|
+            "Mass" -> Quantity[
+              1.095457133439213688532`4.6989700043360205*^21, "Kilograms"], 
+             "Radius" -> Quantity[562.5`4., "Kilometers"]|>, 
+           "Helene" -> <|
+            "Mass" -> Quantity[
+              2.5471217524197656`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[16.`2., "Kilometers"]|>, 
+           "Rhea" -> <|
+            "Mass" -> Quantity[
+              2.308441461148901741032`4.6989700043360205*^21, "Kilograms"], 
+             "Radius" -> Quantity[764.5`4., "Kilometers"]|>, 
+           "Titan" -> <|
+            "Mass" -> Quantity[
+              1.34520841449162446435527`4.958607314841778*^23, "Kilograms"], 
+             "Radius" -> Quantity[2575.5`5., "Kilometers"]|>, 
+           "Hyperion" -> <|
+            "Mass" -> Quantity[
+              5.543735578795960565`1.9995659225206872*^18, "Kilograms"], 
+             "Radius" -> Quantity[133.`4., "Kilometers"]|>, 
+           "Iapetus" -> <|
+            "Mass" -> Quantity[
+              1.805459830391657427108`4.6989700043360205*^21, "Kilograms"], 
+             "Radius" -> Quantity[734.5`4., "Kilometers"]|>, 
+           "Kiviuq" -> <|
+            "Mass" -> Quantity[
+              3.296275209013815`1.9995659225206872*^15, "Kilograms"], 
+             "Radius" -> Quantity[8.`1., "Kilometers"]|>, 
+           "Ijiraq" -> <|
+            "Mass" -> Quantity[
+              1.198645530550478`1.9995659225206872*^15, "Kilograms"], 
+             "Radius" -> Quantity[6.`1., "Kilometers"]|>, 
+           "Phoebe" -> <|
+            "Mass" -> Quantity[
+              8.287135536843366995`3.9586073148417764*^18, "Kilograms"], 
+             "Radius" -> Quantity[106.6`4., "Kilometers"]|>, 
+           "Paaliaq" -> <|
+            "Mass" -> Quantity[
+              8.240688022534537`1.999565922520683*^15, "Kilograms"], "Radius" -> 
+             Quantity[11.`3., "Kilometers"]|>, 
+           "Skathi" -> <|
+            "Mass" -> Quantity[
+              3.146444517695`1.9995659225206786*^14, "Kilograms"], "Radius" -> 
+             Quantity[4.`1., "Kilometers"]|>, 
+           "Albiorix" -> <|
+            "Mass" -> Quantity[
+              2.0976296784633363`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[16.`2., "Kilometers"]|>, 
+           "S/2007 S2" -> <|
+            "Mass" -> Quantity[1.5`2.*^14, "Kilograms"], "Radius" -> 
+             Quantity[3.`1., "Kilometers"]|>, 
+           "Bebhionn" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Erriapo" -> <|
+            "Mass" -> Quantity[
+              7.64136525725929`1.9995659225206914*^14, "Kilograms"], "Radius" -> 
+             Quantity[5.`1., "Kilometers"]|>, 
+           "Siarnaq" -> <|
+            "Mass" -> Quantity[
+              3.8955979742890535`1.999565922520683*^16, "Kilograms"], 
+             "Radius" -> Quantity[20.`2., "Kilometers"]|>, 
+           "Skoll" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Tarvos" -> <|
+            "Mass" -> Quantity[
+              2.696952443738576`1.9995659225206786*^15, "Kilograms"], 
+             "Radius" -> Quantity[7.5`2., "Kilometers"]|>, 
+           "Greip" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "S/2004 S13" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Hyrrokkin" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[4.`2., "Kilometers"]|>, 
+           "Mundilfari" -> <|
+            "Mass" -> Quantity[
+              2.09762967846334`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[3.5`2., "Kilometers"]|>, 
+           "S/2006 S1" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Jarnsaxa" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Narvi" -> <|
+            "Mass" -> Quantity[
+              3.44610590033262`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[3.5`2., "Kilometers"]|>, 
+           "Bergelmir" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "S/2004 S17" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Suttungr" -> <|
+            "Mass" -> Quantity[
+              2.09762967846334`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[3.5`2., "Kilometers"]|>, 
+           "Hati" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "S/2004 S12" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Bestla" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Farbauti" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Thrymr" -> <|
+            "Mass" -> Quantity[
+              2.09762967846334`1.9995659225206872*^14, "Kilograms"], "Radius" -> 
+             Quantity[3.5`2., "Kilometers"]|>, 
+           "S/2007 S3" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.5`2., "Kilometers"]|>, 
+           "Aegir" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "S/2004 S7" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "S/2006 S3" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Kari" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Fenrir" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[2.`2., "Kilometers"]|>, 
+           "Surtur" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Ymir" -> <|
+            "Mass" -> Quantity[
+              4.944412813520729`1.9995659225206872*^15, "Kilograms"], 
+             "Radius" -> Quantity[9.`1., "Kilometers"]|>, 
+           "Loge" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>, 
+           "Fornjot" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[3.`2., "Kilometers"]|>|>|>, 
+       "Uranus" -> <|
+        "Mass" -> Quantity[8.68103`6.*^25, "Kilograms"], "Radius" -> 
+         Quantity[25266.`5., "Kilometers"], 
+         "Moons" -> <|
+          "Cordelia" -> <|
+            "Mass" -> Quantity[
+              4.4949207395642923`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[20.1`3., "Kilometers"]|>, 
+           "Ophelia" -> <|
+            "Mass" -> Quantity[
+              5.3939048874771508`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[21.4`3., "Kilometers"]|>, 
+           "Bianca" -> <|
+            "Mass" -> Quantity[
+              9.2895028617662042`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[25.7`3., "Kilometers"]|>, 
+           "Cressida" -> <|
+            "Mass" -> Quantity[
+              3.43112283120074311`2.9956786262173587*^17, "Kilograms"], 
+             "Radius" -> Quantity[39.8`3., "Kilometers"]|>, 
+           "Desdemona" -> <|
+            "Mass" -> Quantity[
+              1.78298522669383596`2.995678626217367*^17, "Kilograms"], 
+             "Radius" -> Quantity[32.`3., "Kilometers"]|>, 
+           "Juliet" -> <|
+            "Mass" -> Quantity[
+              5.57370171705972251`2.9956786262173543*^17, "Kilograms"], 
+             "Radius" -> Quantity[46.8`3., "Kilometers"]|>, 
+           "Portia" -> <|
+            "Mass" -> Quantity[
+              1.681100356597045339`3.9586073148417764*^18, "Kilograms"], 
+             "Radius" -> Quantity[67.6`3., "Kilometers"]|>, 
+           "Rosalind" -> <|
+            "Mass" -> Quantity[
+              2.54712175241976567`2.9956786262173587*^17, "Kilograms"], 
+             "Radius" -> Quantity[36.`2., "Kilometers"]|>, 
+           "Cupid" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[5.`2., "Kilometers"]|>, 
+           "Belinda" -> <|
+            "Mass" -> Quantity[
+              3.56597045338767194`2.995678626217367*^17, "Kilograms"], 
+             "Radius" -> Quantity[40.3`3., "Kilometers"]|>, 
+           "Perdita" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[10.`2., "Kilometers"]|>, 
+           "Puck" -> <|
+            "Mass" -> Quantity[
+              2.893230649366216176`3.9586073148417764*^18, "Kilograms"], 
+             "Radius" -> Quantity[81.`2., "Kilometers"]|>, 
+           "Mab" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[5.`2., "Kilometers"]|>, 
+           "Miranda" -> <|
+            "Mass" -> Quantity[
+              6.5925504180276287794`1.9995659225206872*^19, "Kilograms"], 
+             "Radius" -> Quantity[235.8`4., "Kilometers"]|>, 
+           "Ariel" -> <|
+            "Mass" -> Quantity[
+              1.352971142608851997243`2.9956786262173587*^21, "Kilograms"], 
+             "Radius" -> Quantity[578.9`4., "Kilometers"]|>, 
+           "Umbriel" -> <|
+            "Mass" -> Quantity[
+              1.171676006113092205807`2.9956786262173587*^21, "Kilograms"], 
+             "Radius" -> Quantity[584.7`4., "Kilometers"]|>, 
+           "Titania" -> <|
+            "Mass" -> Quantity[
+              3.525516166731593299572`3.9586073148417764*^21, "Kilograms"], 
+             "Radius" -> Quantity[788.9`4., "Kilometers"]|>, 
+           "Oberon" -> <|
+            "Mass" -> Quantity[
+              3.013095202421263971712`3.9586073148417764*^21, "Kilograms"], 
+             "Radius" -> Quantity[761.4`4., "Kilometers"]|>, 
+           "Francisco" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[11.`2., "Kilometers"]|>, 
+           "Caliban" -> <|
+            "Mass" -> Quantity[
+              7.34170387462167751`1.9995659225206872*^17, "Kilograms"], 
+             "Radius" -> Quantity[49.`2., "Kilometers"]|>, 
+           "Stephano" -> <|
+            "Mass" -> Quantity[
+              5.99322765275239`0.9999565727231373*^15, "Kilograms"], "Radius" -> 
+             Quantity[10.`2., "Kilometers"]|>, 
+           "Trinculo" -> <|
+            "Mass" -> Quantity[
+              7.49153456594048`0.9999565727231373*^14, "Kilograms"], "Radius" -> 
+             Quantity[5.`1., "Kilometers"]|>, 
+           "Sycorax" -> <|
+            "Mass" -> Quantity[
+              5.378921818345269844`2.9956786262173627*^18, "Kilograms"], 
+             "Radius" -> Quantity[95.`2., "Kilometers"]|>, 
+           "Margaret" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[10.`2., "Kilometers"]|>, 
+           "Prospero" -> <|
+            "Mass" -> Quantity[
+              2.0976296784633363`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[15.`2., "Kilometers"]|>, 
+           "Setebos" -> <|
+            "Mass" -> Quantity[
+              2.0976296784633363`1.9995659225206872*^16, "Kilograms"], 
+             "Radius" -> Quantity[15.`2., "Kilometers"]|>, 
+           "Ferdinand" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[10.`2., "Kilometers"]|>|>|>, 
+       "Neptune" -> <|
+        "Mass" -> Quantity[1.0241`6.*^26, "Kilograms"], "Radius" -> 
+         Quantity[24552.5`5., "Kilometers"], 
+         "Moons" -> <|
+          "Naiad" -> <|
+            "Mass" -> Quantity[
+              1.94779898714452669`1.9995659225206872*^17, "Kilograms"], 
+             "Radius" -> Quantity[33.`2., "Kilometers"]|>, 
+           "Thalassa" -> <|
+            "Mass" -> Quantity[
+              3.74576728297024363`1.9995659225206872*^17, "Kilograms"], 
+             "Radius" -> Quantity[41.`2., "Kilometers"]|>, 
+           "Despina" -> <|
+            "Mass" -> Quantity[
+              2.09762967846333643`1.9995659225206872*^18, "Kilograms"], 
+             "Radius" -> Quantity[75.`2., "Kilometers"]|>, 
+           "Galatea" -> <|
+            "Mass" -> Quantity[
+              3.745767282970243625`1.9995659225206872*^18, "Kilograms"], 
+             "Radius" -> Quantity[88.`2., "Kilometers"]|>, 
+           "Larissa" -> <|
+            "Mass" -> Quantity[
+              4.944412813520721585`1.999565922520683*^18, "Kilograms"], 
+             "Radius" -> Quantity[97.`2., "Kilometers"]|>, 
+           "Proteus" -> <|
+            "Mass" -> Quantity[
+              5.0343112283120074311`2.995678626217367*^19, "Kilograms"], 
+             "Radius" -> Quantity[210.`3., "Kilometers"]|>, 
+           "Triton" -> <|
+            "Mass" -> Quantity[
+              2.139432441341284348686`4.6989700043360205*^22, "Kilograms"], 
+             "Radius" -> Quantity[1353.4`5., "Kilometers"]|>, 
+           "Nereid" -> <|
+            "Mass" -> Quantity[
+              3.0865122411674807466`2.9956786262173587*^19, "Kilograms"], 
+             "Radius" -> Quantity[170.`3., "Kilometers"]|>, 
+           "Halimede" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[30.`2., "Kilometers"]|>, 
+           "Sao" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[20.`2., "Kilometers"]|>, 
+           "Laomedeia" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[20.`2., "Kilometers"]|>, 
+           "Psamathe" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[20.`2., "Kilometers"]|>, 
+           "Neso" -> <|
+            "Mass" -> Missing["NotAvailable"], "Radius" -> 
+             Quantity[30.`2., "Kilometers"]|>|>|>|>, "AllowEmbedding" -> True,
+      "InitialShape" -> TypeSystem`PackageScope`HeaderShape[<|{All, 
+          TypeSystem`PackageScope`KeyDummy[1]} -> 1, {All, "Mass"} -> 
+        1, {All, "Radius"} -> 1, {All, "Moons"} -> <|{All, "Moons", All, 
+            TypeSystem`PackageScope`KeyDummy[0]} -> 
+          1, {All, "Moons", All, "Mass"} -> 1, {All, "Moons", All, "Radius"} -> 
+          1|>|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`KeyValueShape[
+          TypeSystem`PackageScope`AtomShape[78.4], 
+          TypeSystem`PackageScope`Limited[
+           
+           TypeSystem`PackageScope`RowShape[<|
+            "Mass" -> TypeSystem`PackageScope`AtomShape[75], "Radius" -> 
+             TypeSystem`PackageScope`AtomShape[75], "Moons" -> 
+             TypeSystem`PackageScope`Limited[
+               TypeSystem`PackageScope`ColumnShape[
+                TypeSystem`PackageScope`KeyValueShape[
+                 TypeSystem`PackageScope`AtomShape[78.4], 
+                 TypeSystem`PackageScope`Limited[
+                  
+                  TypeSystem`PackageScope`RowShape[<|
+                   "Mass" -> TypeSystem`PackageScope`AtomShape[75], "Radius" -> 
+                    TypeSystem`PackageScope`AtomShape[75]|>], 
+                  DirectedInfinity[1], 2, {All, "Moons", All}]]], 2, 
+               DirectedInfinity[1], {All, "Moons"}]|>], 
+           DirectedInfinity[1], 3, {All}]]], 8, 
+        DirectedInfinity[1], {}]], "InitialType" -> TypeSystem`Assoc[
+       TypeSystem`Atom[String], 
+       TypeSystem`Struct[{"Mass", "Radius", "Moons"}, {
+         TypeSystem`Atom[
+          Quantity[1, "Kilograms"]], 
+         TypeSystem`Atom[
+          Quantity[1, "Kilometers"]], 
+         TypeSystem`Assoc[
+          TypeSystem`Atom[String], 
+          TypeSystem`Struct[{"Mass", "Radius"}, {
+            TypeSystem`Atom[
+             Quantity[1, "Kilograms"]], 
+            TypeSystem`Atom[
+             Quantity[1, "Kilometers"]]}], TypeSystem`AnyLength]}], 8], 
+     "Meta" -> <||>, "RowTarget" -> 20, "ColumnTarget" -> 10, "Shape" -> 
+     TypeSystem`PackageScope`HeaderShape[<|{All, 
+          TypeSystem`PackageScope`KeyDummy[1]} -> 1, {All, "Mass"} -> 
+        1, {All, "Radius"} -> 1, {All, "Moons"} -> <|{All, "Moons", All, 
+            TypeSystem`PackageScope`KeyDummy[0]} -> 
+          1, {All, "Moons", All, "Mass"} -> 1, {All, "Moons", All, "Radius"} -> 
+          1|>|>, 
+       TypeSystem`PackageScope`Limited[
+        TypeSystem`PackageScope`ColumnShape[
+         TypeSystem`PackageScope`KeyValueShape[
+          TypeSystem`PackageScope`AtomShape[78.4], 
+          TypeSystem`PackageScope`Limited[
+           
+           TypeSystem`PackageScope`RowShape[<|
+            "Mass" -> TypeSystem`PackageScope`AtomShape[75], "Radius" -> 
+             TypeSystem`PackageScope`AtomShape[75], "Moons" -> 
+             TypeSystem`PackageScope`Limited[
+               TypeSystem`PackageScope`ColumnShape[
+                TypeSystem`PackageScope`KeyValueShape[
+                 TypeSystem`PackageScope`AtomShape[78.4], 
+                 TypeSystem`PackageScope`Limited[
+                  
+                  TypeSystem`PackageScope`RowShape[<|
+                   "Mass" -> TypeSystem`PackageScope`AtomShape[75], "Radius" -> 
+                    TypeSystem`PackageScope`AtomShape[75]|>], 
+                  DirectedInfinity[1], 2, {All, "Moons", All}]]], 2, 
+               DirectedInfinity[1], {All, "Moons"}]|>], 
+           DirectedInfinity[1], 3, {All}]]], 8, 
+        DirectedInfinity[1], {}]], "Type" -> TypeSystem`Assoc[
+       TypeSystem`Atom[String], 
+       TypeSystem`Struct[{"Mass", "Radius", "Moons"}, {
+         TypeSystem`Atom[
+          Quantity[1, "Kilograms"]], 
+         TypeSystem`Atom[
+          Quantity[1, "Kilometers"]], 
+         TypeSystem`Assoc[
+          TypeSystem`Atom[String], 
+          TypeSystem`Struct[{"Mass", "Radius"}, {
+            TypeSystem`Atom[
+             Quantity[1, "Kilograms"]], 
+            TypeSystem`Atom[
+             Quantity[1, "Kilometers"]]}], TypeSystem`AnyLength]}], 8], 
+     "Path" -> {}, "DisplayedRowCount" -> 8, "DisplayedColumnCount" -> 3, 
+     "DataRowCount" -> 8, "DataColumnCount" -> 3, "SortPaths" -> {}, 
+     "SortDirections" -> {}, "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
+    TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
+    TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 1, 
+    TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+    DynamicModule[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+        Style[
+         Grid[{{
+            Item[
+             Pane[
+              Annotation[
+               Mouseover[
+                
+                Graphics[{}, ImageSize -> 6, BaselinePosition -> 
+                 Scaled[-0.15]], 
+                Graphics[{
+                  GrayLevel[0.6], 
+                  
+                  Polygon[{{2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+                    2^Rational[-1, 2], 2^
+                    Rational[-1, 2]}, {-2^Rational[-1, 2], 2^
+                    Rational[-1, 2]}, {-2^Rational[-1, 2], -2^
+                    Rational[-1, 2]}}]}, ImageSize -> 6, BaselinePosition -> 
+                 Scaled[-0.15]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, Keys}, "KeyDummy", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Mass", 
+                  Style[
+                  "Mass", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Mass"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Mass"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Radius", 
+                  Style[
+                  "Radius", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Radius"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Radius"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Moons", 
+                  Style[
+                  "Moons", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Moons"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Moons"}, "ColumnHeader", False], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Center, Baseline}], SpanFromLeft, 
+            SpanFromLeft}, {SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               Mouseover[
+                
+                Graphics[{}, ImageSize -> 6, BaselinePosition -> 
+                 Scaled[-0.15]], 
+                Graphics[{
+                  GrayLevel[0.6], 
+                  
+                  Polygon[{{2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+                    2^Rational[-1, 2], 2^
+                    Rational[-1, 2]}, {-2^Rational[-1, 2], 2^
+                    Rational[-1, 2]}, {-2^Rational[-1, 2], -2^
+                    Rational[-1, 2]}}]}, ImageSize -> 6, BaselinePosition -> 
+                 Scaled[-0.15]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Moons", All, Keys}, "KeyDummy", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Mass", 
+                  Style[
+                  "Mass", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Moons", All, "Mass"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Moons", All, "Mass"}, "ColumnHeader", True], "Mouse"], 
+              ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Radius", 
+                  Style[
+                  "Radius", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                   All, "Moons", All, "Radius"}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                All, "Moons", All, "Radius"}, "ColumnHeader", True], "Mouse"],
+               ImageSize -> {{1, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Mercury", 
+                  Style[
+                  "Mercury", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Mercury"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mercury"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"3.30104`6.*^23", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mercury"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"2439.7`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mercury"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  Style[
+                   Spacer[10], 
+                   GrayLevel[0.5]], 
+                  Style[
+                   Style[
+                    Spacer[10], 
+                    GrayLevel[0.5]], FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Mercury"], 
+                    Key["Moons"]}, 4]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mercury"], 
+                 Key["Moons"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}], BaseStyle -> {
+               GrayLevel[0.5], 8}], SpanFromLeft, SpanFromLeft}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Venus", 
+                  Style[
+                  "Venus", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Venus"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Venus"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"4.867320000000000000000001`6.*^24", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Venus"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"6051.85`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Venus"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  Style[
+                   Spacer[10], 
+                   GrayLevel[0.5]], 
+                  Style[
+                   Style[
+                    Spacer[10], 
+                    GrayLevel[0.5]], FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Venus"], 
+                    Key["Moons"]}, 4]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Venus"], 
+                 Key["Moons"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}], BaseStyle -> {
+               GrayLevel[0.5], 8}], SpanFromLeft, SpanFromLeft}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Earth", 
+                  Style[
+                  "Earth", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Earth"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Earth"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"5.9721986`8.*^24", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Earth"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "6367.4446571000000000001`8.299868708313456", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Earth"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Moon", 
+                  Style[
+                  "Moon", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Earth"], 
+                    Key["Moons"], 
+                    Key["Moon"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Earth"], 
+                 Key["Moons"], 
+                 Key["Moon"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "7.3459006322855173653772`4.995678626217362*^22", 
+                  "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Earth"], 
+                 Key["Moons"], 
+                 Key["Moon"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"1737.5`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Earth"], 
+                 Key["Moons"], 
+                 Key["Moon"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Mars", 
+                  Style[
+                  "Mars", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Mars"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"6.41693`6.*^23", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"3385.595`4.298042852900571", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Phobos", 
+                  Style[
+                  "Phobos", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Mars"], 
+                    Key["Moons"], 
+                    Key["Phobos"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Moons"], 
+                 Key["Phobos"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "1.0724880884600402`3.9586073148417724*^16", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Moons"], 
+                 Key["Phobos"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"11.1`3", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Moons"], 
+                 Key["Phobos"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Deimos", 
+                  Style[
+                  "Deimos", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Mars"], 
+                    Key["Moons"], 
+                    Key["Deimos"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Moons"], 
+                 Key["Deimos"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "1.468340774924336`1.9995659225206786*^15", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Moons"], 
+                 Key["Deimos"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"6.2`2", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Mars"], 
+                 Key["Moons"], 
+                 Key["Deimos"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Jupiter", 
+                  Style[
+                  "Jupiter", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Jupiter"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"1.89813`6.*^27", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"69173.`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Metis", 
+                  Style[
+                  "Metis", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Jupiter"], 
+                    Key["Moons"], 
+                    Key["Metis"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"], 
+                 Key["Metis"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "1.19864553055047796`0.9999565727231415*^17", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"], 
+                 Key["Metis"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"21.5`3", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"], 
+                 Key["Metis"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Adrastea", 
+                  Style[
+                  "Adrastea", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Jupiter"], 
+                    Key["Moons"], 
+                    Key["Adrastea"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"], 
+                 Key["Adrastea"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "7.491534565940487`0.9999565727231415*^15", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"], 
+                 Key["Adrastea"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"8.2`2", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"], 
+                 Key["Adrastea"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  Superscript["63 total \:203a ", ""], 
+                  Style[
+                   Superscript["63 total \:203a ", ""], FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Jupiter"], 
+                    Key["Moons"]}, 2]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Jupiter"], 
+                 Key["Moons"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}], BaseStyle -> {{
+                RGBColor[
+                0.5098039215686274, 0.5098039215686274, 0.5098039215686274], 
+                8}, ContextMenu -> {
+                 MenuItem["Show 1 More Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 More Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 Delimiter, 
+                 MenuItem["Show 1 Fewer Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 Fewer Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic]}}, 
+             Alignment -> {Left, Baseline}, Background -> GrayLevel[0.98]], 
+            SpanFromLeft, SpanFromLeft}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Saturn", 
+                  Style[
+                  "Saturn", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Saturn"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"5.68319`6.*^26", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"57316.`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Tarqeq", 
+                  Style[
+                  "Tarqeq", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Saturn"], 
+                    Key["Moons"], 
+                    Key["Tarqeq"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"], 
+                 Key["Tarqeq"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               Style["\[LongDash]", 
+                GrayLevel[0.75]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"], 
+                 Key["Tarqeq"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"3.5`2", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"], 
+                 Key["Tarqeq"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Pan", 
+                  Style[
+                  "Pan", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Saturn"], 
+                    Key["Moons"], 
+                    Key["Pan"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"], 
+                 Key["Pan"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "4.944412813520729`1.9995659225206872*^15", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"], 
+                 Key["Pan"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"12.8`3", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"], 
+                 Key["Pan"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  Superscript["61 total \:203a ", ""], 
+                  Style[
+                   Superscript["61 total \:203a ", ""], FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Saturn"], 
+                    Key["Moons"]}, 2]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Saturn"], 
+                 Key["Moons"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}], BaseStyle -> {{
+                RGBColor[
+                0.5098039215686274, 0.5098039215686274, 0.5098039215686274], 
+                8}, ContextMenu -> {
+                 MenuItem["Show 1 More Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 More Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 Delimiter, 
+                 MenuItem["Show 1 Fewer Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 Fewer Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic]}}, 
+             Alignment -> {Left, Baseline}, Background -> GrayLevel[0.98]], 
+            SpanFromLeft, SpanFromLeft}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Uranus", 
+                  Style[
+                  "Uranus", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Uranus"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"8.68103`6.*^25", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"25266.`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Cordelia", 
+                  Style[
+                  "Cordelia", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Uranus"], 
+                    Key["Moons"], 
+                    Key["Cordelia"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"], 
+                 Key["Cordelia"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "4.4949207395642923`1.9995659225206872*^16", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"], 
+                 Key["Cordelia"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"20.1`3", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"], 
+                 Key["Cordelia"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Ophelia", 
+                  Style[
+                  "Ophelia", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Uranus"], 
+                    Key["Moons"], 
+                    Key["Ophelia"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"], 
+                 Key["Ophelia"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "5.3939048874771508`1.9995659225206872*^16", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"], 
+                 Key["Ophelia"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"21.4`3", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"], 
+                 Key["Ophelia"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  Superscript["27 total \:203a ", ""], 
+                  Style[
+                   Superscript["27 total \:203a ", ""], FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Uranus"], 
+                    Key["Moons"]}, 2]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Uranus"], 
+                 Key["Moons"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}], BaseStyle -> {{
+                RGBColor[
+                0.5098039215686274, 0.5098039215686274, 0.5098039215686274], 
+                8}, ContextMenu -> {
+                 MenuItem["Show 1 More Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 More Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 Delimiter, 
+                 MenuItem["Show 1 Fewer Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 Fewer Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic]}}, 
+             Alignment -> {Left, Baseline}, Background -> GrayLevel[0.98]], 
+            SpanFromLeft, SpanFromLeft}, {
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Neptune", 
+                  Style[
+                  "Neptune", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Neptune"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"1.0241`6.*^26", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"24552.5`5", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Naiad", 
+                  Style[
+                  "Naiad", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Neptune"], 
+                    Key["Moons"], 
+                    Key["Naiad"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"], 
+                 Key["Naiad"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "1.94779898714452669`1.9995659225206872*^17", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"], 
+                 Key["Naiad"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"33.`2", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"], 
+                 Key["Naiad"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover["Thalassa", 
+                  Style[
+                  "Thalassa", FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Neptune"], 
+                    Key["Moons"], 
+                    Key["Thalassa"]}, 1]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"], 
+                 Key["Thalassa"]}, "RowHeader", False], "Mouse"], 
+              ImageSize -> {{78.4, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+             GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                
+                RowBox[{
+                 "3.74576728297024363`1.9995659225206872*^17", "\"kg\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"], 
+                 Key["Thalassa"], 
+                 Key["Mass"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}], 
+            Item[
+             Pane[
+              Annotation[
+               RawBoxes[
+                RowBox[{"41.`2", "\"km\""}]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"], 
+                 Key["Thalassa"], 
+                 Key["Radius"]}, "Item", False], "Mouse"], 
+              ImageSize -> {{75, Full}, Automatic}, 
+              ImageMargins -> {{5, 3}, {4, 5}}], 
+             ItemSize -> {Full, Automatic}]}, {
+           SpanFromAbove, SpanFromAbove, SpanFromAbove, 
+            Item[
+             Pane[
+              Annotation[
+               EventHandler[
+                MouseAppearance[
+                 Mouseover[
+                  Superscript["13 total \:203a ", ""], 
+                  Style[
+                   Superscript["13 total \:203a ", ""], FontColor -> 
+                   RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                If[
+                  TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                  TypeSystem`NestedGrid`PackagePrivate`updateState[
+                  TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                   TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    Key["Neptune"], 
+                    Key["Moons"]}, 2]]], 
+               TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                 Key["Neptune"], 
+                 Key["Moons"]}, "Item", False], "Mouse"], 
+              ImageMargins -> {{5, 3}, {4, 5}}], BaseStyle -> {{
+                RGBColor[
+                0.5098039215686274, 0.5098039215686274, 0.5098039215686274], 
+                8}, ContextMenu -> {
+                 MenuItem["Show 1 More Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    1]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 More Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, 
+                    5]& , {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 Delimiter, 
+                 MenuItem["Show 1 Fewer Row at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -1]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic], 
+                 MenuItem["Show 5 Fewer Rows at This Level", 
+                  KernelExecute[
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimitBy[#, -5]& \
+, {All, "Moons"}]], MenuEvaluator -> Automatic]}}, 
+             Alignment -> {Left, Baseline}, Background -> GrayLevel[0.98]], 
+            SpanFromLeft, SpanFromLeft}}, 
+          BaseStyle -> {
+           ContextMenu -> 
+            Dynamic[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+              Which[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID =!= 
+                TypeSystem`NestedGrid`PackagePrivate`localHold[
+                 TypeSystem`NestedGrid`PackagePrivate`$outputID$$], {}, 
+                TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger === 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu, True, 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger = 
+                 TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
+                 Block[{TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos = \
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
+                   
+                   With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    Alternatives["RowHeader", "ColumnHeader"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortPaths"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortDirections"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`haveData$ = Not[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$ = Not[
+                    FreeQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, Keys]]}, 
+                    Join[{
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
+                    Nothing, 
+                    MenuItem[
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "remove"]], MenuEvaluator -> Automatic]], 
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$, 
+                    And[
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$, 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
+                    Nothing, 
+                    MenuItem[
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, "add"]], 
+                    MenuEvaluator -> Automatic]], Delimiter}, 
+                    If[
+                    And[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$, 
+                    Alternatives["ColumnHeader", "KeyDummy"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Ascending", 
+                    MenuItem["Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Descending", 
+                    MenuItem["Reverse Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Descending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    None, 
+                    MenuItem["Unsort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, None]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter}, {}], {
+                    MenuItem["Copy Position to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Copy Data to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter, 
+                    MenuItem["Paste Position in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Paste Data in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
+            "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, Dividers -> 
+          All, FrameStyle -> GrayLevel[0.7490196078431373], 
+          Spacings -> {0, 0}, Alignment -> Left, 
+          BaseStyle -> {
+           FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
+            Plain}], LineBreakWithin -> False, ContextMenu -> {}, NumberMarks -> 
+         False, ShowAutoStyles -> False]], 
+      TypeSystem`NestedGrid`PackagePrivate`initialQ = True}, 
+     Dynamic[
+      TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+         Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+         Module[{
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+           TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+           TypeSystem`NestedGrid`PackagePrivate`datasetData[
+            TypeSystem`NestedGrid`PackagePrivate`$state$$]}, 
+          TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = If[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpData$], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+             TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+             TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+              TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+             TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+            Not[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+            TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+            TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+       TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$; 
+       TypeSystem`NestedGrid`PackagePrivate`$hPos$$; If[
+         FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+         TypeSystem`SparseGrid[
+          TypeSystem`H["(data no longer present)"]], 
+         TypeSystem`NestedGrid`PackagePrivate`renderedGrid]], 
+      TrackedSymbols :> {
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$}], 
+     DynamicModuleValues :> {}], 
+    TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+     TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+      TypeSystem`PackageScope`SubViewPathbar[
+      TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+       TypeSystem`NestedGrid`PackagePrivate`updateState[
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+        TypeSystem`NestedGrid`PackagePrivate`localHold[
+        TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]], 
+     TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+    TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Style[
+     Framed[
+      Dynamic[
+       Replace[
+       TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$, {
+        TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null, 
+           Blank[]] -> "", TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`path$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$, 
+            Blank[]], 
+           Pattern[TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+            Blank[]]] :> (
+          Increment[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger]; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+           TypeSystem`NestedGrid`PackagePrivate`path$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathType = 
+           TypeSystem`NestedGrid`PackagePrivate`pathType$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader = 
+           TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$; 
+          TypeSystem`NestedGrid`PackagePrivate`$lastOutputID = 
+           TypeSystem`NestedGrid`PackagePrivate`localHold[
+            TypeSystem`NestedGrid`PackagePrivate`$outputID$$]; 
+          TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+           TypeSystem`NestedGrid`PackagePrivate`path$, 
+            TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+         Spacer[10], Blank[] :> Spacer[10]}], 
+       TrackedSymbols :> {
+        TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], FrameStyle -> 
+      None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> Top, 
+      ImageSize -> {Automatic, 15}], FontSize -> 1], 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
+    DynamicWrapperBox[
+     DynamicBox[ToBoxes[
+       Dataset`DatasetContent[
+       2, "Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$], 
+        "Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$], "State" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$], "VPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$], "HPos" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$], "TopBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$], "BottomBar" -> 
+        Hold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$], "OutputID" -> 
+        Hold[
+          TypeSystem`NestedGrid`PackagePrivate`localHold[
+          TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
+      ImageSizeCache->{564., {248.13403328722342`, 253.86596671277658`}},
+      TrackedSymbols:>{
+       TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+        TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+     TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
+     MouseAnnotation[],
+     ImageSizeCache->{564., {248.13403328722342`, 253.86596671277658`}}],
+    BaseStyle->{LineBreakWithin -> False},
+    DynamicModuleValues:>{},
+    Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
+     CreateUUID[]),
+    UnsavedVariables:>{TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Dataset`InterpretDataset[1],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.893415613693448*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"eabed2ba-e197-4b51-afa5-63b883221bec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateNotebook", "[", "\"\<DataResource\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8934156311894093`*^9, 3.8934156367851677`*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"e98c46c8-2567-4f90-a40f-e56fea0b23b7"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "cdc9b154-6965-4bfd-85c7-5bb17f36eecb", 
+     "49e4a7f8-e529-45ad-b94f-041a4cbd400c"], "label" -> "\"Untitled-13\""|>,
+  "NotebookObjectUUIDsUnsaved"]], "Output",
+ CellChangeTimes->{3.893415638358883*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"8b96a0a4-33db-46dc-8367-0d9a931d1db9"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{"NotebookDirectory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934167556382093`*^9, 3.893416771634843*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"cce7eca9-c691-4b3c-914e-8bfa3f2c52b7"]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a5541619-669c-4ba4-9814-3681c4a1ef86"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 286, 5, 28, "Input",ExpressionUUID->"ceeebb87-b398-4c77-b525-c3c6004a1695"],
+Cell[869, 29, 145765, 2894, 521, "Output",ExpressionUUID->"eabed2ba-e197-4b51-afa5-63b883221bec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[146671, 2928, 235, 3, 28, "Input",ExpressionUUID->"e98c46c8-2567-4f90-a40f-e56fea0b23b7"],
+Cell[146909, 2933, 344, 7, 46, "Output",ExpressionUUID->"8b96a0a4-33db-46dc-8367-0d9a931d1db9"]
+}, Open  ]],
+Cell[147268, 2943, 254, 4, 84, "Input",ExpressionUUID->"cce7eca9-c691-4b3c-914e-8bfa3f2c52b7"]
+}
+]
+*)
+
