@@ -1,0 +1,486 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17778,        478]
+NotebookOptionsPosition[     12786,        388]
+NotebookOutlinePosition[     13213,        404]
+CellTagsIndexPosition[     13170,        401]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Enter title here", "Title",ExpressionUUID->"cff6f6f0-5548-4d6a-a57d-01d81fd4a635"],
+
+Cell["Enter subtitle here", "Subtitle",ExpressionUUID->"7161bd8f-7e1b-4b0a-82f4-a6126a4ed659"],
+
+Cell["Enter subsubtitle here", "Subsubtitle",ExpressionUUID->"ac7e87ab-a7f7-4d9c-a4a6-55c8fc98bf29"],
+
+Cell[CellGroupData[{
+
+Cell["Enter section title here", "Section",ExpressionUUID->"0777205e-b4d4-4915-81f8-44d6eebeafa3"],
+
+Cell[CellGroupData[{
+
+Cell["Enter subsection title here", "Subsection",ExpressionUUID->"2ddcffcc-5d8b-4bed-8254-f1f6c3558e2a"],
+
+Cell[CellGroupData[{
+
+Cell["Enter subsubsection title here", "Subsubsection",ExpressionUUID->"ba7397b5-dd30-4ccf-bc15-15b7ee9327f9"],
+
+Cell["\<\
+Enter text here. Enter TraditionalForm input for evaluation in a separate \
+cell below:\
+\>", "Text",ExpressionUUID->"8f9b28ac-5a12-40a6-b574-3c06787b9bb1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Integral]", 
+   RowBox[{"x", 
+    RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+  SqrtBox["z"]}]], "Input",ExpressionUUID->"8d9afd2f-1e5a-40f7-9b76-\
+ec9012bc4e33"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   SuperscriptBox["x", "2"], "2"], "+", 
+  SqrtBox["z"]}]], "Output",ExpressionUUID->"95e0f291-11c4-4ea6-bab3-\
+5091ea6f2563"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Enter bulleted item text here.", "Item",ExpressionUUID->"20982da2-46b4-4877-9713-ee7c0573dde1"],
+
+Cell["Enter item paragraph text here.", "ItemParagraph",ExpressionUUID->"8f2d213d-705c-43c0-b4b1-cf72a383ab43"],
+
+Cell[CellGroupData[{
+
+Cell["Enter subitem text here.", "Subitem",ExpressionUUID->"726e3d99-25e7-4e67-aee6-17194f797c95"],
+
+Cell["Enter item paragraph text here.", "SubitemParagraph",ExpressionUUID->"d9067381-7993-465c-b585-5d22737ddef9"],
+
+Cell[CellGroupData[{
+
+Cell["Enter subitem text here.", "Subsubitem",ExpressionUUID->"d9a6733b-3f14-4c41-ac60-f9f153887ab6"],
+
+Cell["Enter item paragraph text here.", "SubsubitemParagraph",ExpressionUUID->"04edd79a-71d4-4b8b-81ec-be7d0740885d"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+Enter text here. Enter formula for display in a separate cell below:\
+\>", "Text",ExpressionUUID->"26fa91ff-2a1e-4cfb-8e0a-d61e8206224c"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{"x", 
+     RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+   SqrtBox["z"]}], TraditionalForm]], "DisplayFormula",ExpressionUUID->\
+"aa24ef83-a976-4a1c-8406-d6fb0c045912"],
+
+Cell[TextData[{
+ "Enter text here. Enter an inline formula like this: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "+", "2"}], TraditionalForm]],ExpressionUUID->
+  "2bbd62a1-5d55-46c1-aaf6-7b44d9cda877"],
+ "."
+}], "Text",ExpressionUUID->"d51fcb82-7786-4813-ab0c-e8801c32f6cc"],
+
+Cell[CellGroupData[{
+
+Cell["Enter numbered item text here.", "ItemNumbered",ExpressionUUID->"3aed0ffb-8a65-40a6-a90d-d65c1e406f58"],
+
+Cell["Enter item paragraph text here.", "ItemParagraph",ExpressionUUID->"1a9f8e90-5bce-45a7-95b7-e96bb1c139d3"],
+
+Cell[CellGroupData[{
+
+Cell["Enter numbered subitem text here.", "SubitemNumbered",ExpressionUUID->"3cafc725-1f15-45d5-937c-53cc2e062887"],
+
+Cell["Enter item paragraph text here.", "SubitemParagraph",ExpressionUUID->"384e69cc-3641-4518-9f20-bb4d5987e748"],
+
+Cell[CellGroupData[{
+
+Cell["Enter subitem text here.", "SubsubitemNumbered",ExpressionUUID->"12a0051e-7b0d-41fa-9236-e1a61af2365d"],
+
+Cell["Enter item paragraph text here.", "SubsubitemParagraph",ExpressionUUID->"49136e66-8a76-402c-9890-a30adc2f961d"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+Enter text here. Enter formula for numbered display in a separate cell below:\
+\>", "Text",ExpressionUUID->"9acc09a0-4734-46a2-aac8-d2ea74ac6b63"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Integral]", 
+    RowBox[{"x", 
+     RowBox[{"\[DifferentialD]", "x"}]}]}], "+", 
+   SqrtBox["z"]}], TraditionalForm]], "DisplayFormulaNumbered",ExpressionUUID->\
+"9b16cced-785a-4678-9d1d-869fc9c15a5c"],
+
+Cell["Enter text here. Enter Wolfram Language program code below.", "Text",ExpressionUUID->"64a3feac-aa1e-4164-962b-9b086985894f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fun", "[", "x_", "]"}], ":=", "1"}]], "Code",ExpressionUUID->\
+"c34e1290-0aa6-4198-8ee4-a83a03457e1b"],
+
+Cell["\<\
+Enter text here. Enter non-Wolfram Language program code below.\
+\>", "Text",ExpressionUUID->"6dd2c5b2-7098-4c2b-9bb3-eb3110b61f8e"],
+
+Cell["\<\
+DLLEXPORT int fun(WolframLibraryData libData, mreal A1, mreal *Res)
+{
+ mreal R0_0;
+ mreal R0_1;
+ R0_0 = A1;
+ R0_1 = R0_0 * R0_0;
+ *Res = R0_1;
+ funStructCompile->WolframLibraryData_cleanUp(libData, 1);
+ return 0;
+}\
+\>", "Program",ExpressionUUID->"365127c7-99ec-47cc-a13a-eabf7ef62b99"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"api", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"\"\<city\>\"", "->", "\"\<City\>\""}], ",", 
+     RowBox[{
+      RowBox[{"WeatherData", "[", 
+       RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], "&"}]}], "]"}]}],
+   ";"}]], "Input",
+ CellChangeTimes->{{3.893421831345812*^9, 3.8934218571211104`*^9}},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"48580147-95f8-478f-b5ec-732ce69640bb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"weatherReport", "=", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{"api", ",", 
+    RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934218646054945`*^9, 3.8934218780539274`*^9}},
+ CellLabel->
+  "In[101]:=",ExpressionUUID->"f4d6cb31-011c-47e2-aa35-f82c4a63e92f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/a56e4330-f25c-4232-8ff7-ff533b0c72bc\"\
+", "https://www.wolframcloud.com/obj/a56e4330-f25c-4232-8ff7-ff533b0c72bc"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/a56e4330-f25c-4232-8ff7-ff533b0c72bc"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893421878906438*^9},
+ CellLabel->
+  "Out[101]=",ExpressionUUID->"961586db-82d3-43df-b9d2-5a1f6b3103fa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"weatherReport", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<city\>\"", "->", "\"\<London\>\""}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.893421885849558*^9, 3.8934218967496834`*^9}},
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"eae8ec9b-330f-478e-855b-4e9d5c1feeaf"],
+
+Cell[BoxData[
+ TemplateBox[{"17", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8934219020616145`*^9},
+ CellLabel->
+  "Out[102]=",ExpressionUUID->"a8ace18f-757a-436c-8a0f-994078506441"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"\"\<city\>\"", "\[Rule]", "\"\<City\>\""}], ",", 
+     RowBox[{
+      RowBox[{"WeatherData", "[", 
+       RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], "&"}]}], "]"}], 
+   ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934219152181344`*^9, 3.893421939389367*^9}},
+ CellLabel->
+  "In[104]:=",ExpressionUUID->"c6f58c1f-61d4-4d49-b17a-038159c78e36"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/267d86c3-bfcd-4ad8-9ecd-2d0ad0fee017\"\
+", "https://www.wolframcloud.com/obj/267d86c3-bfcd-4ad8-9ecd-2d0ad0fee017"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/267d86c3-bfcd-4ad8-9ecd-2d0ad0fee017"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893421940220836*^9},
+ CellLabel->
+  "Out[104]=",ExpressionUUID->"8437337f-8466-4c66-b656-7181f8de7da3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"\"\<city\>\"", "->", 
+      RowBox[{"\"\<City\>\"", "->", "$GeoLocationCity"}]}], ",", 
+     RowBox[{
+      RowBox[{"WeatherData", "[", 
+       RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], "&"}]}], "]"}], 
+   ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934219741066704`*^9, 3.893422003487076*^9}},
+ CellLabel->
+  "In[105]:=",ExpressionUUID->"d9e54756-dc1a-4c13-b99f-735bbeda4598"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/18cfa17c-d877-486f-ac26-b5b545bdb1cb\"\
+", "https://www.wolframcloud.com/obj/18cfa17c-d877-486f-ac26-b5b545bdb1cb"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/18cfa17c-d877-486f-ac26-b5b545bdb1cb"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893422007363843*^9},
+ CellLabel->
+  "Out[105]=",ExpressionUUID->"5489a484-bdf9-4bfe-a883-373275f9926d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"\"\<city\>\"", "->", 
+      RowBox[{"\"\<City\>\"", "->", "$GeoLocationCity"}]}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\"\<Current Temperature\>\"", ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "}"}]}], 
+         "}"}], ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.89342225855575*^9, 3.893422333383498*^9}},
+ CellLabel->
+  "In[106]:=",ExpressionUUID->"06140fa6-0e3e-46e6-925c-bf4ad366ed56"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/8d4b4b99-6386-46c9-b389-c87dd9c83740\"\
+", "https://www.wolframcloud.com/obj/8d4b4b99-6386-46c9-b389-c87dd9c83740"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/8d4b4b99-6386-46c9-b389-c87dd9c83740"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934223341890807`*^9},
+ CellLabel->
+  "Out[106]=",ExpressionUUID->"19a20fb0-c040-4f6a-80cb-e2015614d9f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"\"\<city\>\"", "->", 
+      RowBox[{"\"\<City\>\"", "->", "$GeoLocationCity"}]}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], 
+             "]"}]}], "}"}]}], "}"}], ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.89342225855575*^9, 3.8934224229264493`*^9}},
+ CellLabel->
+  "In[109]:=",ExpressionUUID->"ceab26fd-5d39-4582-b3bc-39f6c44874d5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/185c7132-c26e-4d1e-8fe1-c906f19af9c8\"\
+", "https://www.wolframcloud.com/obj/185c7132-c26e-4d1e-8fe1-c906f19af9c8"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/185c7132-c26e-4d1e-8fe1-c906f19af9c8"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.893422363365612*^9, 3.893422391265316*^9}, 
+   3.89342242367459*^9},
+ CellLabel->
+  "Out[109]=",ExpressionUUID->"98647e71-9534-4356-b7e7-43ece23121b7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"d8f2f401-2edb-481d-bd0d-bef967481669"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 88, 0, 98, "Title",ExpressionUUID->"cff6f6f0-5548-4d6a-a57d-01d81fd4a635"],
+Cell[671, 24, 94, 0, 53, "Subtitle",ExpressionUUID->"7161bd8f-7e1b-4b0a-82f4-a6126a4ed659"],
+Cell[768, 26, 100, 0, 31, "Subsubtitle",ExpressionUUID->"ac7e87ab-a7f7-4d9c-a4a6-55c8fc98bf29"],
+Cell[CellGroupData[{
+Cell[893, 30, 98, 0, 67, "Section",ExpressionUUID->"0777205e-b4d4-4915-81f8-44d6eebeafa3"],
+Cell[CellGroupData[{
+Cell[1016, 34, 104, 0, 54, "Subsection",ExpressionUUID->"2ddcffcc-5d8b-4bed-8254-f1f6c3558e2a"],
+Cell[CellGroupData[{
+Cell[1145, 38, 110, 0, 45, "Subsubsection",ExpressionUUID->"ba7397b5-dd30-4ccf-bc15-15b7ee9327f9"],
+Cell[1258, 40, 166, 3, 64, "Text",ExpressionUUID->"8f9b28ac-5a12-40a6-b574-3c06787b9bb1"],
+Cell[CellGroupData[{
+Cell[1449, 47, 200, 6, 43, "Input",ExpressionUUID->"8d9afd2f-1e5a-40f7-9b76-ec9012bc4e33"],
+Cell[1652, 55, 165, 5, 50, "Output",ExpressionUUID->"95e0f291-11c4-4ea6-bab3-5091ea6f2563"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1854, 65, 101, 0, 32, "Item",ExpressionUUID->"20982da2-46b4-4877-9713-ee7c0573dde1"],
+Cell[1958, 67, 111, 0, 25, "ItemParagraph",ExpressionUUID->"8f2d213d-705c-43c0-b4b1-cf72a383ab43"],
+Cell[CellGroupData[{
+Cell[2094, 71, 98, 0, 70, "Subitem",ExpressionUUID->"726e3d99-25e7-4e67-aee6-17194f797c95"],
+Cell[2195, 73, 114, 0, 70, "SubitemParagraph",ExpressionUUID->"d9067381-7993-465c-b585-5d22737ddef9"],
+Cell[CellGroupData[{
+Cell[2334, 77, 101, 0, 70, "Subsubitem",ExpressionUUID->"d9a6733b-3f14-4c41-ac60-f9f153887ab6"],
+Cell[2438, 79, 117, 0, 70, "SubsubitemParagraph",ExpressionUUID->"04edd79a-71d4-4b8b-81ec-be7d0740885d"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[2594, 84, 147, 2, 70, "Text",ExpressionUUID->"26fa91ff-2a1e-4cfb-8e0a-d61e8206224c"],
+Cell[2744, 88, 242, 7, 39, "DisplayFormula",ExpressionUUID->"aa24ef83-a976-4a1c-8406-d6fb0c045912"],
+Cell[2989, 97, 276, 7, 38, "Text",ExpressionUUID->"d51fcb82-7786-4813-ab0c-e8801c32f6cc"],
+Cell[CellGroupData[{
+Cell[3290, 108, 109, 0, 32, "ItemNumbered",ExpressionUUID->"3aed0ffb-8a65-40a6-a90d-d65c1e406f58"],
+Cell[3402, 110, 111, 0, 25, "ItemParagraph",ExpressionUUID->"1a9f8e90-5bce-45a7-95b7-e96bb1c139d3"],
+Cell[CellGroupData[{
+Cell[3538, 114, 115, 0, 26, "SubitemNumbered",ExpressionUUID->"3cafc725-1f15-45d5-937c-53cc2e062887"],
+Cell[3656, 116, 114, 0, 23, "SubitemParagraph",ExpressionUUID->"384e69cc-3641-4518-9f20-bb4d5987e748"],
+Cell[CellGroupData[{
+Cell[3795, 120, 109, 0, 25, "SubsubitemNumbered",ExpressionUUID->"12a0051e-7b0d-41fa-9236-e1a61af2365d"],
+Cell[3907, 122, 117, 0, 22, "SubsubitemParagraph",ExpressionUUID->"49136e66-8a76-402c-9890-a30adc2f961d"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[4063, 127, 156, 2, 64, "Text",ExpressionUUID->"9acc09a0-4734-46a2-aac8-d2ea74ac6b63"],
+Cell[4222, 131, 250, 7, 39, "DisplayFormulaNumbered",ExpressionUUID->"9b16cced-785a-4678-9d1d-869fc9c15a5c"],
+Cell[4475, 140, 130, 0, 38, "Text",ExpressionUUID->"64a3feac-aa1e-4164-962b-9b086985894f"],
+Cell[4608, 142, 137, 3, 50, "Code",ExpressionUUID->"c34e1290-0aa6-4198-8ee4-a83a03457e1b"],
+Cell[4748, 147, 142, 2, 64, "Text",ExpressionUUID->"6dd2c5b2-7098-4c2b-9bb3-eb3110b61f8e"],
+Cell[4893, 151, 296, 11, 219, "Program",ExpressionUUID->"365127c7-99ec-47cc-a13a-eabf7ef62b99"],
+Cell[5192, 164, 449, 12, 48, "Input",ExpressionUUID->"48580147-95f8-478f-b5ec-732ce69640bb"],
+Cell[CellGroupData[{
+Cell[5666, 180, 327, 7, 28, "Input",ExpressionUUID->"f4d6cb31-011c-47e2-aa35-f82c4a63e92f"],
+Cell[5996, 189, 522, 12, 85, "Output",ExpressionUUID->"961586db-82d3-43df-b9d2-5a1f6b3103fa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6555, 206, 323, 7, 28, "Input",ExpressionUUID->"eae8ec9b-330f-478e-855b-4e9d5c1feeaf"],
+Cell[6881, 215, 246, 5, 36, "Output",ExpressionUUID->"a8ace18f-757a-436c-8a0f-994078506441"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7164, 225, 521, 13, 67, "Input",ExpressionUUID->"c6f58c1f-61d4-4d49-b17a-038159c78e36"],
+Cell[7688, 240, 522, 12, 85, "Output",ExpressionUUID->"8437337f-8466-4c66-b656-7181f8de7da3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8247, 257, 559, 14, 67, "Input",ExpressionUUID->"d9e54756-dc1a-4c13-b99f-735bbeda4598"],
+Cell[8809, 273, 522, 12, 85, "Output",ExpressionUUID->"5489a484-bdf9-4bfe-a883-373275f9926d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9368, 290, 940, 24, 105, "Input",ExpressionUUID->"06140fa6-0e3e-46e6-925c-bf4ad366ed56"],
+Cell[10311, 316, 524, 12, 85, "Output",ExpressionUUID->"19a20fb0-c040-4f6a-80cb-e2015614d9f8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10872, 333, 1276, 33, 124, "Input",ExpressionUUID->"ceab26fd-5d39-4582-b3bc-39f6c44874d5"],
+Cell[12151, 368, 571, 13, 85, "Output",ExpressionUUID->"98647e71-9534-4356-b7e7-43ece23121b7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

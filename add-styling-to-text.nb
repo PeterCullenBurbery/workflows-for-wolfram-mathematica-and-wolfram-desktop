@@ -1,0 +1,194 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6101,        186]
+NotebookOptionsPosition[      4428,        153]
+NotebookOutlinePosition[      4855,        169]
+CellTagsIndexPosition[      4812,        166]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "We called him ",
+ StyleBox["Big Red.",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.8934206949107275`*^9, 
+  3.893420700679676*^9}},ExpressionUUID->"90b3e6f4-a099-48ac-bf9c-\
+11eaaf05c7fb"],
+
+Cell[TextData[{
+ "We called him ",
+ StyleBox["Big Red",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8934206949107275`*^9, 
+  3.893420700679676*^9}},ExpressionUUID->"2aa36d8d-39f9-45e9-b5a7-\
+69bbb3e358b8"],
+
+Cell[TextData[{
+ "We called him ",
+ StyleBox["Big Red",
+  FontSize->48],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8934206949107275`*^9, 
+  3.893420700679676*^9}},ExpressionUUID->"7bd86287-3218-4a98-8d33-\
+2b392bd2b6e9"],
+
+Cell[TextData[{
+ "We called him ",
+ StyleBox["Big Red",
+  FontSize->7],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8934206949107275`*^9, 
+  3.893420700679676*^9}},ExpressionUUID->"26653588-dbd7-431c-afa6-\
+a640f4ce1901"],
+
+Cell[TextData[{
+ "We called him ",
+ StyleBox["Big Red",
+  FontColor->RGBColor[1, 0, 0]],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.8934206949107275`*^9, 
+  3.893420700679676*^9}},ExpressionUUID->"8e244bf8-ace8-476e-9617-\
+92d132e3b6c6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Row", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<He rode a \>\"", ",", 
+    RowBox[{"Style", "[", 
+     RowBox[{"\"\<big\>\"", ",", 
+      RowBox[{"FontSize", "->", "24"}]}], "]"}], ",", "\"\< \>\"", ",", 
+    RowBox[{"Style", "[", 
+     RowBox[{"\"\<red\>\"", ",", "Red"}], "]"}], ",", "\"\< horse\>\""}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934207935927043`*^9, 3.8934208120492177`*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"8c5b4026-f488-4503-93e6-eb08fba5b510"],
+
+Cell[BoxData[
+ TemplateBox[{"\"He rode a \"", 
+   StyleBox["\"big\"", FontSize -> 24, StripOnInput -> False], "\" \"", 
+   StyleBox["\"red\"", 
+    RGBColor[1, 0, 0], StripOnInput -> False], "\" horse\""},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{3.893420813041026*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"3e03aaa1-edeb-4e60-a5c1-f8c4824cc9a5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["With a Custom Button", "Section",
+ CellChangeTimes->{{3.8934208212639437`*^9, 
+  3.893420825598628*^9}},ExpressionUUID->"448d9857-5206-4650-b102-\
+7bab4ceaefb4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Button", "[", 
+  RowBox[{"\"\<Highlight\>\"", ",", 
+   RowBox[{"SetOptions", "[", 
+    RowBox[{
+     RowBox[{"NotebookSelection", "[", 
+      RowBox[{"InputNotebook", "[", "]"}], "]"}], ",", "Italic", ",", 
+     RowBox[{"Background", "->", "LightYellow"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934208442739677`*^9, 3.893420868590397*^9}},
+ CellLabel->"In[82]:=",ExpressionUUID->"d30bd931-623c-45f5-a16e-907dd4a64933"],
+
+Cell[BoxData[
+ ButtonBox["\<\"Highlight\"\>",
+  Appearance->Automatic,
+  ButtonFunction:>SetOptions[
+    NotebookSelection[
+     InputNotebook[]], Italic, Background -> LightYellow],
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Output",
+ CellChangeTimes->{3.893420868966421*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"ec035cdf-ca53-4bfa-8e99-8eb50fdbebbb"]
+}, Open  ]],
+
+Cell["The cat in the hat is back.", "Text",
+ CellChangeTimes->{{3.8934208726503067`*^9, 
+  3.893420877306389*^9}},ExpressionUUID->"6d64c7db-95dc-4a07-8340-\
+146797c7f667"],
+
+Cell[TextData[{
+ "The ",
+ StyleBox["cat in the hat",
+  FontSlant->Italic,
+  Background->RGBColor[1, 1, 0.85]],
+ " is back."
+}], "Text",
+ CellChangeTimes->{{3.8934208726503067`*^9, 
+  3.893420877306389*^9}},ExpressionUUID->"10228b28-3db5-4ce7-8d65-\
+afc3eadc4dc9"],
+
+Cell["The cat in the hat is back.", "Text",
+ CellChangeTimes->{{3.8934208726503067`*^9, 
+  3.893420877306389*^9}},ExpressionUUID->"41625da5-b5f3-4d82-b70f-\
+ddbee54b914b"],
+
+Cell["The cat in the hat is back.", "Text",
+ CellChangeTimes->{{3.8934208726503067`*^9, 
+  3.893420877306389*^9}},ExpressionUUID->"fb063f07-0e6f-4b78-9dfa-\
+ba6d6ec7a80c"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"b1515faa-03f5-4b20-b47e-cba31724115f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 218, 7, 38, "Text",ExpressionUUID->"90b3e6f4-a099-48ac-bf9c-11eaaf05c7fb"],
+Cell[779, 29, 224, 8, 38, "Text",ExpressionUUID->"2aa36d8d-39f9-45e9-b5a7-69bbb3e358b8"],
+Cell[1006, 39, 217, 8, 90, "Text",ExpressionUUID->"7bd86287-3218-4a98-8d33-2b392bd2b6e9"],
+Cell[1226, 49, 216, 8, 38, "Text",ExpressionUUID->"26653588-dbd7-431c-afa6-a640f4ce1901"],
+Cell[1445, 59, 233, 8, 38, "Text",ExpressionUUID->"8e244bf8-ace8-476e-9617-92d132e3b6c6"],
+Cell[CellGroupData[{
+Cell[1703, 71, 502, 11, 48, "Input",ExpressionUUID->"8c5b4026-f488-4503-93e6-eb08fba5b510"],
+Cell[2208, 84, 354, 7, 64, "Output",ExpressionUUID->"3e03aaa1-edeb-4e60-a5c1-f8c4824cc9a5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2599, 96, 167, 3, 67, "Section",ExpressionUUID->"448d9857-5206-4650-b102-7bab4ceaefb4"],
+Cell[CellGroupData[{
+Cell[2791, 103, 455, 9, 67, "Input",ExpressionUUID->"d30bd931-623c-45f5-a16e-907dd4a64933"],
+Cell[3249, 114, 363, 9, 41, "Output",ExpressionUUID->"ec035cdf-ca53-4bfa-8e99-8eb50fdbebbb"]
+}, Open  ]],
+Cell[3627, 126, 171, 3, 38, "Text",ExpressionUUID->"6d64c7db-95dc-4a07-8340-146797c7f667"],
+Cell[3801, 131, 263, 9, 38, "Text",ExpressionUUID->"10228b28-3db5-4ce7-8d65-afc3eadc4dc9"],
+Cell[4067, 142, 171, 3, 38, "Text",ExpressionUUID->"41625da5-b5f3-4d82-b70f-ddbee54b914b"],
+Cell[4241, 147, 171, 3, 38, "Text",ExpressionUUID->"fb063f07-0e6f-4b78-9dfa-ba6d6ec7a80c"]
+}, Open  ]]
+}
+]
+*)
+

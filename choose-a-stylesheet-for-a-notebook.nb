@@ -1,0 +1,48 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1173,         40]
+NotebookOptionsPosition[       729,         25]
+NotebookOutlinePosition[      1223,         42]
+CellTagsIndexPosition[      1180,         39]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Clocks and Timekeeping", "Title",
+ CellChangeTimes->{{3.8934206546377635`*^9, 
+  3.893420660423009*^9}},ExpressionUUID->"eda024dd-62d2-4172-9783-\
+4e32d6d216f8"]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "JournalArticle.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"f48cb516-ece4-40c3-9647-31a8e2b54907"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 167, 3, 76, "Title",ExpressionUUID->"eda024dd-62d2-4172-9783-4e32d6d216f8"]
+}
+]
+*)
+

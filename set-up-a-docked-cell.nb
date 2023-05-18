@@ -1,0 +1,85 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2562,         77]
+NotebookOptionsPosition[      1845,         56]
+NotebookOutlinePosition[      2304,         74]
+CellTagsIndexPosition[      2261,         71]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Set the DockedCells option to add a docked cell to the current notebook.\
+\>", "Text",
+ CellChangeTimes->{{3.893421006857381*^9, 
+  3.8934210383675513`*^9}},ExpressionUUID->"ca6df9c2-e650-431f-87fe-\
+662940423774"],
+
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", 
+  RowBox[{
+   RowBox[{"EvaluationNotebook", "[", "]"}], ",", 
+   RowBox[{"DockedCells", "->", 
+    RowBox[{"{", 
+     RowBox[{"Cell", "[", "\"\<XXXX\>\"", "]"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934210393119364`*^9, 3.8934210544364076`*^9}},
+ CellLabel->"In[83]:=",ExpressionUUID->"f1d046c0-2449-499f-857f-c78102cf0d1c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateNotebook", "[", 
+  RowBox[{"DockedCells", "->", 
+   RowBox[{"Cell", "[", "\"\<XXXX\>\"", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.893421070572542*^9, 3.8934210793554697`*^9}},
+ CellLabel->"In[84]:=",ExpressionUUID->"5a2b3ac8-b6be-420c-8e19-888db507be01"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "cffe7439-340b-4370-9895-785e2130402c", 
+     "e8fee4e5-af91-4013-80c5-6a133d1fff8b"], "label" -> "\"Untitled-27\""|>,
+  "NotebookObjectUUIDsUnsaved"]], "Output",
+ CellChangeTimes->{3.893421080310461*^9},
+ CellLabel->"Out[84]=",ExpressionUUID->"7251413d-bd9f-4a01-895c-85dd65426597"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+DockedCells->{
+  Cell["XXXX"]},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"ReverseColor.nb",
+ExpressionUUID->"24bccaba-3a88-4a98-8b97-3daf18a251df"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 224, 5, 64, "Text",ExpressionUUID->"ca6df9c2-e650-431f-87fe-662940423774"],
+Cell[785, 27, 381, 8, 28, "Input",ExpressionUUID->"f1d046c0-2449-499f-857f-c78102cf0d1c"],
+Cell[CellGroupData[{
+Cell[1191, 39, 291, 5, 28, "Input",ExpressionUUID->"5a2b3ac8-b6be-420c-8e19-888db507be01"],
+Cell[1485, 46, 344, 7, 46, "Output",ExpressionUUID->"7251413d-bd9f-4a01-895c-85dd65426597"]
+}, Open  ]]
+}
+]
+*)
+

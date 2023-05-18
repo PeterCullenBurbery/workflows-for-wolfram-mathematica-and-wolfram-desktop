@@ -1,0 +1,73 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2014,         65]
+NotebookOptionsPosition[      1387,         45]
+NotebookOutlinePosition[      1809,         61]
+CellTagsIndexPosition[      1766,         58]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["1 Create a Data Resource", "Subsection",
+ CellChangeTimes->{{3.8934185413632035`*^9, 
+  3.893418549340855*^9}},ExpressionUUID->"4f4c2c39-c7ee-4730-b1a8-\
+1ec3fd7887fb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CreateNotebook", "[", "\"\<DataResource\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.893418568576977*^9, 3.8934185793686123`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"662a6b32-8877-428f-bde1-9ac65265bf34"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "634eb88d-3863-49d1-bb05-fa8f0910744d", 
+     "aea648c8-ab4d-4935-9d5a-8d516b2b6627"], "label" -> "\"Untitled-16\""|>,
+  "NotebookObjectUUIDsUnsaved"]], "Output",
+ CellChangeTimes->{3.893418581117058*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"9b41d5f4-5fcd-4225-8a37-51aaa75091af"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cd651381-f27a-4f21-a96b-f2283dd1258d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 174, 3, 54, "Subsection",ExpressionUUID->"4f4c2c39-c7ee-4730-b1a8-1ec3fd7887fb"],
+Cell[CellGroupData[{
+Cell[779, 29, 233, 3, 28, "Input",ExpressionUUID->"662a6b32-8877-428f-bde1-9ac65265bf34"],
+Cell[1015, 34, 344, 7, 46, "Output",ExpressionUUID->"9b41d5f4-5fcd-4225-8a37-51aaa75091af"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4810,        132]
+NotebookOptionsPosition[      3685,        105]
+NotebookOutlinePosition[      4107,        121]
+CellTagsIndexPosition[      4064,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"CloudShare", "[", "\"\<jdoe@wolfram.com\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.893420019355625*^9, 3.8934200251639156`*^9}},
+ CellLabel->"In[58]:=",ExpressionUUID->"f098ed75-2ee6-45f6-a906-999ccdcef332"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/b582bce0-07cc-460f-8fb1-82868cf94386\"\
+", "https://www.wolframcloud.com/obj/b582bce0-07cc-460f-8fb1-82868cf94386"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/b582bce0-07cc-460f-8fb1-82868cf94386"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934200275250564`*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"33a96f01-4f7e-413f-b382-c4fe06abc195"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudShare", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<petercullenburbery@gmail.com\>\"", ",", 
+    "\"\<burbery1@marshall.edu\>\"", ",", "\"\<burbery@marshall.edu\>\"", 
+    ",", "\"\<hannah.burbery@gmail.com\>\""}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893420019355625*^9, 3.8934200667742715`*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"84754984-2078-4d69-9b5a-802438354f32"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "SetOptions", "selfperm", 
+   "\"The currently authenticated user \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"burbery1@marshall.edu\\\\\\\"\\\"}]\\) cannot be \
+assigned specific permissions. Owners always have full permissions on their \
+objects.\"", 2, 59, 8, 28308516767907859258, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8934200699675303`*^9},
+ CellLabel->
+  "During evaluation of \
+In[59]:=",ExpressionUUID->"c3938db9-230b-4030-a5d6-80fdf5f970b5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/ace1a657-7faf-4da0-bc8b-da665d6720e3\"\
+", "https://www.wolframcloud.com/obj/ace1a657-7faf-4da0-bc8b-da665d6720e3"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/ace1a657-7faf-4da0-bc8b-da665d6720e3"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893420070041497*^9},
+ CellLabel->"Out[59]=",ExpressionUUID->"700111c4-a68b-4e8d-88d1-bf16ceb844e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudShare", "[", 
+  RowBox[{
+   RowBox[{"CloudObject", "[", "\"\<WorldTime.nb\>\"", "]"}], ",", 
+   "\"\<jdoe@wolfram.com\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934200822368097`*^9, 3.893420095245132*^9}},
+ CellLabel->"In[60]:=",ExpressionUUID->"584263f2-c9f0-42a4-9a2a-441f8a8456a4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CloudObject", "cloudnf", "\"No CloudObject found at the given address\"", 
+   2, 60, 9, 28308516767907859258, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8934200956593003`*^9},
+ CellLabel->
+  "During evaluation of \
+In[60]:=",ExpressionUUID->"3a333b5c-09a5-4851-8fe4-b6820ee9d1d7"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.8934200957436423`*^9},
+ CellLabel->"Out[60]=",ExpressionUUID->"21280a0b-3218-4a4e-a11c-bd8a468793bc"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"40d96823-a490-4d0e-b0dc-3c2136c8a45f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 233, 3, 28, "Input",ExpressionUUID->"f098ed75-2ee6-45f6-a906-999ccdcef332"],
+Cell[816, 27, 520, 11, 56, "Output",ExpressionUUID->"33a96f01-4f7e-413f-b382-c4fe06abc195"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1373, 43, 412, 8, 67, "Input",ExpressionUUID->"84754984-2078-4d69-9b5a-802438354f32"],
+Cell[1788, 53, 501, 11, 46, "Message",ExpressionUUID->"c3938db9-230b-4030-a5d6-80fdf5f970b5"],
+Cell[2292, 66, 518, 11, 85, "Output",ExpressionUUID->"700111c4-a68b-4e8d-88d1-bf16ceb844e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2847, 82, 318, 6, 28, "Input",ExpressionUUID->"584263f2-c9f0-42a4-9a2a-441f8a8456a4"],
+Cell[3168, 90, 341, 8, 28, "Message",ExpressionUUID->"3a333b5c-09a5-4851-8fe4-b6820ee9d1d7"],
+Cell[3512, 100, 157, 2, 32, "Output",ExpressionUUID->"21280a0b-3218-4a4e-a11c-bd8a468793bc"]
+}, Open  ]]
+}
+]
+*)
+

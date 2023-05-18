@@ -1,0 +1,1556 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     63101,       1548]
+NotebookOptionsPosition[     59780,       1480]
+NotebookOutlinePosition[     60202,       1496]
+CellTagsIndexPosition[     60159,       1493]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["For the Notebook that contains the evaluation", "Section",
+ CellChangeTimes->{{3.893420426238765*^9, 
+  3.893420431899299*^9}},ExpressionUUID->"99e80796-c647-4550-b93e-\
+4665092f6e8e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nb", "=", 
+  RowBox[{"EvaluationNotebook", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.893420421549613*^9, 3.8934204369366293`*^9}},
+ CellLabel->"In[67]:=",ExpressionUUID->"39f8e4f5-cec1-4e59-bc3f-f29b60ce2bad"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "47c56f0d-2f17-472b-9dc5-e791adc708a0", 
+     "a70c1168-65fd-47f3-9e14-b57580036816"], "label" -> 
+   "\"find-a-notebooks-notebook-object-identifier.nb\"", "tooltip" -> 
+   "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\workflows-for-wolfram-mathematica-and-wolfram-desktop\
+\\\\find-a-notebooks-notebook-object-identifier.nb\""|>,
+  "NotebookObjectUUIDs"]], "Output",
+ CellChangeTimes->{3.893420437282683*^9},
+ CellLabel->"Out[67]=",ExpressionUUID->"550cf266-01a8-4e95-bc80-4f97be6069ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"InputNotebook", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8934204447788534`*^9, 3.8934204472153363`*^9}},
+ CellLabel->"In[68]:=",ExpressionUUID->"21cf60c4-329d-43b5-9209-3868f6cc8d24"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "47c56f0d-2f17-472b-9dc5-e791adc708a0", 
+     "a70c1168-65fd-47f3-9e14-b57580036816"], "label" -> 
+   "\"find-a-notebooks-notebook-object-identifier.nb\"", "tooltip" -> 
+   "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\workflows-for-wolfram-mathematica-and-wolfram-desktop\
+\\\\find-a-notebooks-notebook-object-identifier.nb\""|>,
+  "NotebookObjectUUIDs"]], "Output",
+ CellChangeTimes->{3.893420447536336*^9},
+ CellLabel->"Out[68]=",ExpressionUUID->"891f5af2-4eef-440e-8c1a-32823c8a0f35"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "InputNotebook"}]], "Input",
+ CellChangeTimes->{{3.8934204492006207`*^9, 3.8934204531510057`*^9}},
+ CellLabel->"In[70]:=",ExpressionUUID->"dc049519-b101-4283-b16a-c354e86f665d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/InputNotebook",
+              ButtonNote->"paclet:ref/InputNotebook"],
+             "\"paclet:ref/InputNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"InputNotebook\\\", \\\"[\\\", \
+\\\"]\\\"}]\\) gives the current notebook into which keyboard input in the \
+front end will be directed. \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/InputNotebook",
+                     "paclet:ref/InputNotebook", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/InputNotebook.\
+html"], None}, "http://reference.wolfram.com/language/ref/InputNotebook.html",
+                     "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`InputNotebook\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/InputNotebook",
+              ButtonNote->"paclet:ref/InputNotebook"],
+             "\"paclet:ref/InputNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"InputNotebook\\\", \\\"[\\\", \
+\\\"]\\\"}]\\) gives the current notebook into which keyboard input in the \
+front end will be directed. \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"InputNotebook\", \"[\", \"]\"}]\) gives the current \
+notebook into which keyboard input in the front end will be directed. ", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/InputNotebook", "Web" -> 
+      "http://reference.wolfram.com/language/ref/InputNotebook.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`InputNotebook"|>, False]]], "Output",
+ CellChangeTimes->{{3.893420450948263*^9, 3.893420453976047*^9}},
+ CellLabel->"Out[70]=",ExpressionUUID->"9a9a2d28-b082-4427-9543-a03f711f127a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "SelectedNotebook"}]], "Input",
+ CellChangeTimes->{{3.8934204603569155`*^9, 3.8934204629820166`*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"c2170fae-54cb-4138-b0a7-3a9967963a18"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/SelectedNotebook",
+              ButtonNote->"paclet:ref/SelectedNotebook"],
+             "\"paclet:ref/SelectedNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"SelectedNotebook\\\", \
+\\\"[\\\", \\\"]\\\"}]\\) gives the currently selected notebook in the front \
+end. \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/SelectedNotebook", 
+                    "paclet:ref/SelectedNotebook", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/\
+SelectedNotebook.html"], None}, 
+                    "http://reference.wolfram.com/language/ref/\
+SelectedNotebook.html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`SelectedNotebook\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/SelectedNotebook",
+              ButtonNote->"paclet:ref/SelectedNotebook"],
+             "\"paclet:ref/SelectedNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"SelectedNotebook\\\", \
+\\\"[\\\", \\\"]\\\"}]\\) gives the currently selected notebook in the front \
+end. \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"SelectedNotebook\", \"[\", \"]\"}]\) gives the currently \
+selected notebook in the front end. ", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/SelectedNotebook", "Web" -> 
+      "http://reference.wolfram.com/language/ref/SelectedNotebook.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`SelectedNotebook"|>, False]]], "Output",
+ CellChangeTimes->{3.8934204633606024`*^9},
+ CellLabel->"Out[71]=",ExpressionUUID->"abe2fdd2-1533-4425-8d03-01ce26b7d03f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SelectedNotebook", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8934204650271854`*^9, 3.893420468494704*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"2eb1a726-1681-470e-802f-2893925b41e8"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "47c56f0d-2f17-472b-9dc5-e791adc708a0", 
+     "a70c1168-65fd-47f3-9e14-b57580036816"], "label" -> 
+   "\"find-a-notebooks-notebook-object-identifier.nb\"", "tooltip" -> 
+   "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\workflows-for-wolfram-mathematica-and-wolfram-desktop\
+\\\\find-a-notebooks-notebook-object-identifier.nb\""|>,
+  "NotebookObjectUUIDs"]], "Output",
+ CellChangeTimes->{3.893420468835705*^9},
+ CellLabel->"Out[72]=",ExpressionUUID->"daad72f2-c59b-4117-b1d5-6153461f1223"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "ButtonNotebook"}]], "Input",
+ CellChangeTimes->{{3.8934204715449095`*^9, 3.8934204744449778`*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"00165c77-688a-4e99-8076-299aa9390867"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ButtonNotebook",
+              ButtonNote->"paclet:ref/ButtonNotebook"],
+             "\"paclet:ref/ButtonNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ButtonNotebook\\\", \\\"[\\\", \
+\\\"]\\\"}]\\) gives the notebook, if any, that contains the button which \
+initiated the current evaluation. \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/ButtonNotebook", "paclet:ref/ButtonNotebook", 
+                    "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/ButtonNotebook.\
+html"], None}, 
+                    "http://reference.wolfram.com/language/ref/ButtonNotebook.\
+html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`ButtonNotebook\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ButtonNotebook",
+              ButtonNote->"paclet:ref/ButtonNotebook"],
+             "\"paclet:ref/ButtonNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ButtonNotebook\\\", \\\"[\\\", \
+\\\"]\\\"}]\\) gives the notebook, if any, that contains the button which \
+initiated the current evaluation. \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"ButtonNotebook\", \"[\", \"]\"}]\) gives the notebook, \
+if any, that contains the button which initiated the current evaluation. ", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/ButtonNotebook", "Web" -> 
+      "http://reference.wolfram.com/language/ref/ButtonNotebook.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`ButtonNotebook"|>, False]]], "Output",
+ CellChangeTimes->{3.893420474883045*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"f342f206-a101-4c78-a216-d7e3587fb28a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ButtonNotebook", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8934204755510626`*^9, 3.8934204785190086`*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"84ace3f2-2c87-4d5a-8090-0d96f7ff501c"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.893420478874055*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"6f6cf9fd-d36f-4f5f-947d-ead6c2d326fc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "ParentNotebook"}]], "Input",
+ CellChangeTimes->{{3.893420481938876*^9, 3.893420485839446*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"f30dcb7b-0101-470c-b51e-1620fc63b570"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ParentNotebook",
+              ButtonNote->"paclet:ref/ParentNotebook"],
+             "\"paclet:ref/ParentNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ParentNotebook\\\", \\\"[\\\", \
+StyleBox[\\\"obj\\\", \\\"TI\\\"], \\\"]\\\"}]\\) returns the NotebookObject \
+that contains \\!\\(\\*StyleBox[\\\"obj\\\", \\\"TI\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/ParentNotebook", "paclet:ref/ParentNotebook", 
+                    "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/ParentNotebook.\
+html"], None}, 
+                    "http://reference.wolfram.com/language/ref/ParentNotebook.\
+html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`ParentNotebook\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ParentNotebook",
+              ButtonNote->"paclet:ref/ParentNotebook"],
+             "\"paclet:ref/ParentNotebook\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ParentNotebook\\\", \\\"[\\\", \
+StyleBox[\\\"obj\\\", \\\"TI\\\"], \\\"]\\\"}]\\) returns the NotebookObject \
+that contains \\!\\(\\*StyleBox[\\\"obj\\\", \\\"TI\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"ParentNotebook\", \"[\", StyleBox[\"obj\", \"TI\"], \
+\"]\"}]\) returns the NotebookObject that contains \!\(\*StyleBox[\"obj\", \
+\"TI\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/ParentNotebook", "Web" -> 
+      "http://reference.wolfram.com/language/ref/ParentNotebook.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`ParentNotebook"|>, False]]], "Output",
+ CellChangeTimes->{3.8934204862244473`*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"893c5169-e96b-4021-bf0f-08c182d569ff"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ParentNotebook", "[", 
+  RowBox[{"SelectedNotebook", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893420488339409*^9, 3.8934204951511936`*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"d7a50bd9-943d-495a-adbd-14a77d0bc34e"],
+
+Cell[BoxData[
+ RowBox[{"ParentNotebook", "[", 
+  TemplateBox[<|
+   "obj" -> NotebookObject[
+     "47c56f0d-2f17-472b-9dc5-e791adc708a0", 
+      "a70c1168-65fd-47f3-9e14-b57580036816"], "label" -> 
+    "\"find-a-notebooks-notebook-object-identifier.nb\"", "tooltip" -> 
+    "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\workflows-for-wolfram-mathematica-and-wolfram-desktop\
+\\\\find-a-notebooks-notebook-object-identifier.nb\""|>,
+   "NotebookObjectUUIDs"], "]"}]], "Output",
+ CellChangeTimes->{3.8934204954872274`*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"4bfc5eb3-3257-496d-834e-7135a974eec0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NotebookFileName", "[", "nb", "]"}]], "Input",
+ CellChangeTimes->{{3.893420504776393*^9, 3.8934205112349367`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"b1ab79c0-ee92-4dc2-9b6f-fb813c1bbf25"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\workflows-for-wolfram-mathematica-and-wolfram-desktop\
+\\\\find-a-notebooks-notebook-object-identifier.nb\"\>"], "Output",
+ CellChangeTimes->{3.893420511648344*^9},
+ CellLabel->"Out[77]=",ExpressionUUID->"71414f1f-7ed7-4171-9912-dc72b3eb4c9d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Notebooks", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8934205220282526`*^9, 3.8934205235270233`*^9}},
+ CellLabel->"In[78]:=",ExpressionUUID->"9b779007-fb28-4162-97a0-b6f0d475ad2e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "47c56f0d-2f17-472b-9dc5-e791adc708a0", 
+       "a70c1168-65fd-47f3-9e14-b57580036816"], "label" -> 
+     "\"find-a-notebooks-notebook-object-identifier.nb\"", "tooltip" -> 
+     "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\GitHub\\\\workflows-for-wolfram-mathematica-and-wolfram-desktop\
+\\\\find-a-notebooks-notebook-object-identifier.nb\""|>,
+    "NotebookObjectUUIDs"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "df0e3acb-0925-4af1-9516-476499a1b925", 
+       "e7a0ab93-1197-4b44-afe8-ad734dc37d35"], "label" -> 
+     "\"Find a Notebook's NotebookObject Identifier - Wolfram Mathematica \
+13.2\"", "tooltip" -> 
+     "\"C:\\\\Program Files\\\\Common Files\\\\Wolfram \
+Research\\\\Documentation.en-us\\\\13.2\\\\Documentation\\\\English\\\\System\
+\\\\Workflows\\\\FindANotebooksNotebookObjectIdentifier.nb\""|>,
+    "NotebookObjectUUIDs"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "2a653b4d-5397-4405-9097-8fb63544a1cf", 
+       "1bb8c4ef-5e8b-4aed-a08e-5a171caabc2b"], "label" -> 
+     "\"Wolfram Cloud Activity\"", "tooltip" -> 
+     "\"C:\\\\Program Files\\\\Wolfram \
+Research\\\\Mathematica\\\\13.2\\\\SystemFiles\\\\Components\\\\CloudDialogs\\\
+\\FrontEnd\\\\SystemResources\\\\WolframCloudActivityDialog.nb\""|>,
+    "NotebookObjectUUIDs"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "ee12a3a0-b6b7-4c1b-af76-8329d2844913", 
+       "9664c268-98a6-431a-8364-2261f200e11e"], "label" -> 
+     "\"Planets | Example Notebook\""|>,
+    "NotebookObjectUUIDsUnsaved"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "c4239c2c-66ba-4e36-807a-ed1dd5b75325", 
+       "f126a3f3-ade5-4a5b-a395-ffee141753a9"], "label" -> 
+     "\"Planets | Example Notebook\""|>,
+    "NotebookObjectUUIDsUnsaved"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "d7fd38d8-e96c-4217-ab01-985eb99544f7", 
+       "a5694aa5-16e1-46e1-a106-0917bb3152b9"], "label" -> 
+     "\"Planets | Example Notebook\""|>,
+    "NotebookObjectUUIDsUnsaved"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "1c5088f6-4d04-4dba-abbf-510765305803", 
+       "71b53fc2-ac1c-457e-8b25-a6d243c9bb2e"], "label" -> 
+     "\"Planets | Example Notebook\""|>,
+    "NotebookObjectUUIDsUnsaved"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "e31d8668-0092-4461-8f0a-47c3f9b9d147", 
+       "f8a40512-5bd9-49ce-80f9-257a572ae3f2"], "label" -> 
+     "\"WinterSolstice | Example Notebook\""|>,
+    "NotebookObjectUUIDsUnsaved"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "b3d8efd8-0bbc-4d64-946a-86c28f03b565", 
+       "615ffeb5-15d8-4b07-91b4-7f32c9757e12"], "label" -> 
+     "\"WinterSolstice | Example Notebook\""|>,
+    "NotebookObjectUUIDsUnsaved"], ",", 
+   TemplateBox[<|
+    "obj" -> NotebookObject[
+      "12d777e8-e58e-4ddb-b76f-07466858eef8", 
+       "3367c339-994b-4f5b-b08d-02a07a9070cf"], "label" -> "\"Messages\""|>,
+    "NotebookObjectUUIDsUnsaved"]}], "}"}]], "Output",
+ CellChangeTimes->{3.893420523965994*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"08bd680d-ad33-401d-b94b-5992e4f7b0be"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"nb", "=", 
+  RowBox[{
+   RowBox[{"Notebooks", "[", "]"}], "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934205524476867`*^9, 3.8934205565671577`*^9}},
+ CellLabel->"In[79]:=",ExpressionUUID->"47f402a2-0688-48d4-bcc7-800bd4cb76d7"],
+
+Cell[BoxData[
+ TemplateBox[<|
+  "obj" -> NotebookObject[
+    "df0e3acb-0925-4af1-9516-476499a1b925", 
+     "e7a0ab93-1197-4b44-afe8-ad734dc37d35"], "label" -> 
+   "\"Find a Notebook's NotebookObject Identifier - Wolfram Mathematica \
+13.2\"", "tooltip" -> 
+   "\"C:\\\\Program Files\\\\Common Files\\\\Wolfram \
+Research\\\\Documentation.en-us\\\\13.2\\\\Documentation\\\\English\\\\System\
+\\\\Workflows\\\\FindANotebooksNotebookObjectIdentifier.nb\""|>,
+  "NotebookObjectUUIDs"]], "Output",
+ CellChangeTimes->{3.893420557033574*^9},
+ CellLabel->"Out[79]=",ExpressionUUID->"5c52651a-c3b0-4105-b3b7-5fb0adb40f64"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NotebookDirectory", "[", "nb", "]"}]], "Input",
+ CellChangeTimes->{{3.893420566499143*^9, 3.893420569949746*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"fd537c9e-fdd9-490d-a38e-f5cd607a23f2"],
+
+Cell[BoxData["\<\"C:\\\\Program Files\\\\Common Files\\\\Wolfram \
+Research\\\\Documentation.en-us\\\\13.2\\\\Documentation\\\\English\\\\System\
+\\\\Workflows\\\\\"\>"], "Output",
+ CellChangeTimes->{3.8934205703622713`*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"9a461df9-3aba-4545-94ef-7ce1b2cc209f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"47c56f0d-2f17-472b-9dc5-e791adc708a0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 190, 3, 105, "Section",ExpressionUUID->"99e80796-c647-4550-b93e-4665092f6e8e"],
+Cell[CellGroupData[{
+Cell[795, 29, 237, 4, 28, "Input",ExpressionUUID->"39f8e4f5-cec1-4e59-bc3f-f29b60ce2bad"],
+Cell[1035, 35, 576, 11, 46, "Output",ExpressionUUID->"550cf266-01a8-4e95-bc80-4f97be6069ed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1648, 51, 210, 3, 28, "Input",ExpressionUUID->"21cf60c4-329d-43b5-9209-3868f6cc8d24"],
+Cell[1861, 56, 576, 11, 46, "Output",ExpressionUUID->"891f5af2-4eef-440e-8c1a-32823c8a0f35"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2474, 72, 205, 3, 28, "Input",ExpressionUUID->"dc049519-b101-4283-b16a-c354e86f665d"],
+Cell[2682, 77, 12139, 292, 120, "Output",ExpressionUUID->"9a9a2d28-b082-4427-9543-a03f711f127a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14858, 374, 208, 3, 28, "Input",ExpressionUUID->"c2170fae-54cb-4138-b0a7-3a9967963a18"],
+Cell[15069, 379, 12095, 294, 95, "Output",ExpressionUUID->"abe2fdd2-1533-4425-8d03-01ce26b7d03f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27201, 678, 211, 3, 28, "Input",ExpressionUUID->"2eb1a726-1681-470e-802f-2893925b41e8"],
+Cell[27415, 683, 576, 11, 46, "Output",ExpressionUUID->"daad72f2-c59b-4117-b1d5-6153461f1223"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28028, 699, 206, 3, 28, "Input",ExpressionUUID->"00165c77-688a-4e99-8076-299aa9390867"],
+Cell[28237, 704, 12170, 294, 120, "Output",ExpressionUUID->"f342f206-a101-4c78-a216-d7e3587fb28a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40444, 1003, 211, 3, 28, "Input",ExpressionUUID->"84ace3f2-2c87-4d5a-8090-0d96f7ff501c"],
+Cell[40658, 1008, 155, 2, 32, "Output",ExpressionUUID->"6f6cf9fd-d36f-4f5f-947d-ead6c2d326fc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40850, 1015, 202, 3, 28, "Input",ExpressionUUID->"f30dcb7b-0101-470c-b51e-1620fc63b570"],
+Cell[41055, 1020, 12269, 297, 95, "Output",ExpressionUUID->"893c5169-e96b-4021-bf0f-08c182d569ff"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53361, 1322, 252, 4, 28, "Input",ExpressionUUID->"d7a50bd9-943d-495a-adbd-14a77d0bc34e"],
+Cell[53616, 1328, 625, 12, 75, "Output",ExpressionUUID->"4bfc5eb3-3257-496d-834e-7135a974eec0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54278, 1345, 217, 3, 28, "Input",ExpressionUUID->"b1ab79c0-ee92-4dc2-9b6f-fb813c1bbf25"],
+Cell[54498, 1350, 331, 4, 90, "Output",ExpressionUUID->"71414f1f-7ed7-4171-9912-dc72b3eb4c9d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54866, 1359, 206, 3, 28, "Input",ExpressionUUID->"9b779007-fb28-4162-97a0-b6f0d475ad2e"],
+Cell[55075, 1364, 3182, 73, 387, "Output",ExpressionUUID->"08bd680d-ad33-401d-b94b-5992e4f7b0be"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58294, 1442, 283, 6, 28, "Input",ExpressionUUID->"47f402a2-0688-48d4-bcc7-800bd4cb76d7"],
+Cell[58580, 1450, 613, 12, 46, "Output",ExpressionUUID->"5c52651a-c3b0-4105-b3b7-5fb0adb40f64"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[59230, 1467, 216, 3, 28, "Input",ExpressionUUID->"fd537c9e-fdd9-490d-a38e-f5cd607a23f2"],
+Cell[59449, 1472, 303, 4, 71, "Output",ExpressionUUID->"9a461df9-3aba-4545-94ef-7ce1b2cc209f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
