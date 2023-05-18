@@ -1,0 +1,2200 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     99718,       2192]
+NotebookOptionsPosition[     96229,       2125]
+NotebookOutlinePosition[     96693,       2142]
+CellTagsIndexPosition[     96650,       2139]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fibonacciAPI", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<n\>\"", "->", "\"\<Integer\>\""}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Fibonacci", "[", "#n", "]"}], "&"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.893411822601993*^9, 3.893411841080037*^9}},
+ CellLabel->
+  "In[342]:=",ExpressionUUID->"63b48342-ef42-4f72-8861-0e9ca430d5fb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fibonacciAPI", "[", 
+  RowBox[{"<|", 
+   RowBox[{"\"\<n\>\"", "->", "403"}], "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934118464748197`*^9, 3.8934118572180915`*^9}},
+ CellLabel->
+  "In[343]:=",ExpressionUUID->"7548f7ad-9eac-47a1-befb-2c2ac6eaa83c"],
+
+Cell[BoxData[\
+"74564827686199318998420482075533324200114456086910197385968038418851388785228\
+0667477"], "Output",
+ CellChangeTimes->{3.8934118576380577`*^9},
+ CellLabel->
+  "Out[343]=",ExpressionUUID->"aef1fcb3-1d92-424e-8e81-e4b243c64304"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AstroDistance", "[", 
+  RowBox[{
+   TemplateBox[{"\"Earth\"", 
+     RowBox[{"Entity", "[", 
+       RowBox[{"\"Planet\"", ",", "\"Earth\""}], "]"}], 
+     "\"Entity[\\\"Planet\\\", \\\"Earth\\\"]\"", "\"planet\""},
+    "Entity"], ",", 
+   RowBox[{"Dated", "[", 
+    RowBox[{
+     TemplateBox[{"\"Sun\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"Star\"", ",", "\"Sun\""}], "]"}], 
+       "\"Entity[\\\"Star\\\", \\\"Sun\\\"]\"", "\"star\""},
+      "Entity"], ",", "Now"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934118687275877`*^9, 3.893411889457944*^9}},
+ CellLabel->
+  "In[346]:=",ExpressionUUID->"d30acd16-5488-4143-badd-3e50b7bf5cc1"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "1.011470643419919`", "\"au\"", "astronomical units", 
+   "\"AstronomicalUnit\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.893411889779233*^9},
+ CellLabel->
+  "Out[346]=",ExpressionUUID->"40478422-9197-40c4-90cc-f075124565b1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"AstroDistance", "[", 
+    RowBox[{
+     TemplateBox[{"\"Earth\"", 
+       RowBox[{"Entity", "[", 
+         RowBox[{"\"Planet\"", ",", "\"Earth\""}], "]"}], 
+       "\"Entity[\\\"Planet\\\", \\\"Earth\\\"]\"", "\"planet\""},
+      "Entity"], ",", 
+     RowBox[{"Dated", "[", 
+      RowBox[{
+       TemplateBox[{"\"Sun\"", 
+         RowBox[{"Entity", "[", 
+           RowBox[{"\"Star\"", ",", "\"Sun\""}], "]"}], 
+         "\"Entity[\\\"Star\\\", \\\"Sun\\\"]\"", "\"star\""},
+        "Entity"], ",", "Now"}], "]"}]}], "]"}], ",", "\"\<Gigameters\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8934118930610943`*^9, 3.8934118995690694`*^9}},
+ CellLabel->
+  "In[347]:=",ExpressionUUID->"8b446f0f-3e45-4aa1-8c77-b7b385c84f05"],
+
+Cell[BoxData[
+ TemplateBox[{"151.31385817739832`", "\"Gm\"", "gigameters", "\"Gigameters\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.89341189987407*^9},
+ CellLabel->
+  "Out[347]=",ExpressionUUID->"151d5283-5054-4816-9c40-20bf35eaf4e0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"distanceFromEarthToSunAPI", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<date\>\"", "->", 
+       RowBox[{"\"\<Date\>\"", "->", "\"\<now\>\""}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"UnitConvert", "[", 
+       RowBox[{
+        RowBox[{"AstroDistance", "[", 
+         RowBox[{
+          TemplateBox[{"\"Earth\"", 
+            RowBox[{"Entity", "[", 
+              RowBox[{"\"Planet\"", ",", "\"Earth\""}], "]"}], 
+            "\"Entity[\\\"Planet\\\", \\\"Earth\\\"]\"", "\"planet\""},
+           "Entity"], ",", 
+          RowBox[{"Dated", "[", 
+           RowBox[{
+            TemplateBox[{"\"Sun\"", 
+              RowBox[{"Entity", "[", 
+                RowBox[{"\"Star\"", ",", "\"Sun\""}], "]"}], 
+              "\"Entity[\\\"Star\\\", \\\"Sun\\\"]\"", "\"star\""},
+             "Entity"], ",", "#date"}], "]"}]}], "]"}], ",", 
+        "\"\<Gigameters\>\""}], "]"}], "&"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.893411906519043*^9, 3.893411941747717*^9}, {
+  3.8934119905066986`*^9, 3.893411991463241*^9}},
+ CellLabel->
+  "In[351]:=",ExpressionUUID->"255790ab-2f94-43b4-b613-1c5baf0eee7c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"distanceFromEarthToSunAPI", "[", 
+  RowBox[{"<|", "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934119440473323`*^9, 3.893411955420051*^9}},
+ CellLabel->
+  "In[352]:=",ExpressionUUID->"b779b724-c165-4c76-8059-47f008db192b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The API could not be evaluated because the following \
+fields contain failures: \\\"date\\\".\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ValidationFailure\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The API could not be evaluated because the following \
+fields contain failures: \\\"date\\\".\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ValidationFailure\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Parameters\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{"\"date\"", "\[Rule]", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["Failure", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    FrameBox[
+                    StyleBox["\"\[WarningSign]\"", 
+                    Directive["Message", 35], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    GridBox[{{
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Enter a valid date.\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"InterpretationFailure\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Input: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"Missing", "[", 
+                    RowBox[{"\"KeyAbsent\"", ",", "\"Input\""}], "]"}], 
+                    "SummaryItem"]}}, GridBoxItemSize -> {
+                    "Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    FrameBox[
+                    StyleBox["\"\[WarningSign]\"", 
+                    Directive["Message", 35], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    GridBox[{{
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Enter a valid date.\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"InterpretationFailure\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Input: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"Missing", "[", 
+                    RowBox[{"\"KeyAbsent\"", ",", "\"Input\""}], "]"}], 
+                    "SummaryItem"]}}, GridBoxItemSize -> {
+                    "Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    Failure[
+                    "InterpretationFailure", <|
+                    "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+                    "MessageParameters" -> <|
+                    "Input" -> Missing["KeyAbsent", "Input"]|>, "Input" -> 
+                    Missing["KeyAbsent", "Input"]|>], Selectable -> False, 
+                    Editable -> False, SelectWithContents -> True]}], 
+                    "\[RightAssociation]"}], HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"FormObject\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   InterpretationBox[
+                    TagBox[
+                    GridBox[{{
+                    ItemBox[
+                    TagBox[
+                    StyleBox["\"date\"", "FormLabel", StripOnInput -> False], 
+                    Annotation[#, "date", "HTMLLabel"]& ], Alignment -> Right,
+                     StripOnInput -> False], 
+                    TagBox[
+                    TagBox[
+                    DynamicModuleBox[{Typeset`i$$ = ""}, 
+                    InputFieldBox[
+                    Dynamic[Typeset`i$$], String, FieldHint -> Null, 
+                    DefaultBaseStyle -> "FormField", DefaultFieldHintStyle -> 
+                    "FormFieldHint", FieldMasked -> False, Enabled -> 
+                    Automatic], DynamicModuleValues -> Automatic], InputField[
+                    Setting[#], String, FieldHint -> Null, DefaultBaseStyle -> 
+                    "FormField", DefaultFieldHintStyle -> "FormFieldHint", 
+                    FieldMasked -> False, Enabled -> Automatic]& ], 
+                    Annotation[#, {
+                    "date", "data-field-name" -> "Date", "data-field-type" -> 
+                    "Semantic", "data-field-verbose" -> "date", 
+                    "data-field-examples" -> 
+                    "9 March 2013||11/20/1982||today||in 1990||20100410", 
+                    "data-field-prompt" -> 
+                    "Enter a date||(or anything indicating one)"}, 
+                    "HTMLControl"]& ]}, {"\"\"", 
+                    StyleBox[
+                    TagBox[
+                    "\"Enter a valid date.\"", 
+                    Annotation[#, {"p", "class" -> "help-block help-error"}, 
+                    "HTMLAttrs"]& ], "FormFailure", StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    "ControlStyle", ShowStringCharacters -> False}], "Grid"], 
+                    
+                    FormObject[<|
+                    "date" -> <|
+                    "Disambiguation" -> None, "Interpreter" -> "Date", 
+                    "Default" -> "now"|>|>, <|
+                    "date" -> Failure[
+                    "InterpretationFailure", <|
+                    "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+                    "MessageParameters" -> <|
+                    "Input" -> Missing["KeyAbsent", "Input"]|>, "Input" -> 
+                    Missing["KeyAbsent", "Input"]|>]|>]], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Fields\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{"\"date\"", "\[Rule]", 
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"AllowedExtensions\"", "\[Rule]", 
+                    RowBox[{"{", "\"json\"", "}"}]}], ",", 
+                    RowBox[{"\"AutoSubmitting\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"CodeLanguage\"", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"\"Default\"", "\[Rule]", "\"now\""}], ",", 
+                    RowBox[{"\"Enabled\"", "\[Rule]", "True"}], ",", 
+                    RowBox[{"\"Failure\"", "\[Rule]", 
+                    TagBox[
+                    "\"Enter a valid date.\"", 
+                    Annotation[#, {"p", "class" -> "help-block help-error"}, 
+                    "HTMLAttrs"]& ]}], ",", 
+                    RowBox[{"\"Help\"", "\[Rule]", "None"}], ",", 
+                    RowBox[{"\"Hidden\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Hint\"", "\[Rule]", "Null"}], ",", 
+                    RowBox[{"\"Input\"", "\[Rule]", 
+                    RowBox[{"Missing", "[", "\"NoInput\"", "]"}]}], ",", 
+                    RowBox[{"\"Interpreter\"", "\[Rule]", "\"Date\""}], ",", 
+                    RowBox[{"\"Label\"", "\[Rule]", 
+                    TagBox[
+                    "\"date\"", Annotation[#, "date", "HTMLLabel"]& ]}], ",", 
+                    RowBox[{"\"Required\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Type\"", "\[Rule]", "\"Element\""}]}], 
+                    "\[RightAssociation]"}]}], "\[RightAssociation]"}], 
+                   HoldForm], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure[
+  "ValidationFailure", <|
+   "MessageTemplate" :> MessageName[APIFunction, "failurefields"], 
+    "Parameters" -> <|
+     "date" -> Failure[
+       "InterpretationFailure", <|
+        "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+         "MessageParameters" -> <|"Input" -> Missing["KeyAbsent", "Input"]|>, 
+         "Input" -> Missing["KeyAbsent", "Input"]|>]|>, "FormObject" -> 
+    FormObject[<|
+      "date" -> <|
+        "Disambiguation" -> None, "Interpreter" -> "Date", "Default" -> 
+         "now"|>|>, <|
+      "date" -> Failure[
+        "InterpretationFailure", <|
+         "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+          "MessageParameters" -> <|"Input" -> Missing["KeyAbsent", "Input"]|>,
+           "Input" -> Missing["KeyAbsent", "Input"]|>]|>], 
+    "Fields" -> <|
+     "date" -> <|
+       "AllowedExtensions" -> {"json"}, "AutoSubmitting" -> False, 
+        "CodeLanguage" -> Automatic, "Default" -> "now", "Enabled" -> True, 
+        "Failure" -> 
+        Annotation[
+         "Enter a valid date.", {"p", "class" -> "help-block help-error"}, 
+          "HTMLAttrs"], "Help" -> None, "Hidden" -> False, "Hint" -> Null, 
+        "Input" -> Missing["NoInput"], "Interpreter" -> "Date", "Label" -> 
+        Annotation["date", "date", "HTMLLabel"], "Required" -> False, "Type" -> 
+        "Element"|>|>, 
+    "MessageParameters" -> <|"FailureFields" -> "\"date\""|>|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.89341195601064*^9, 3.8934119936828284`*^9},
+ CellLabel->
+  "Out[352]=",ExpressionUUID->"de2c9397-ed1f-430a-b7d8-465f6b3d68f3"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"colorList", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<length\>\"", "\[Rule]", 
+       RowBox[{"\"\<Number\>\"", "->", "30"}]}], 
+      RowBox[{"(*", 
+       RowBox[{
+       "because", " ", "of", " ", "Central", " ", "Limit", " ", "Theorem"}], 
+       "*)"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"RandomColor", "[", "#length", "]"}], "&"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8934120207782307`*^9, 3.893412063482106*^9}},
+ CellLabel->
+  "In[355]:=",ExpressionUUID->"e067987b-e5e4-4069-85ed-a144cfc84ee5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"colorList", "[", 
+  RowBox[{"<|", "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893412049840314*^9, 3.8934120519261336`*^9}},
+ CellLabel->
+  "In[356]:=",ExpressionUUID->"46bd6dd5-fd86-4b62-aee0-d0459b442f24"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9179621030528842, 0.5719318800288569, 0.9664683563314818]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5319521726226826, 0.4014738273602574, 0.14686210172114822`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.0783974932064464, 0.0644459234205288, 0.4060850531302316]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.3264190034404415, 0.29013379293308117`, 0.8306786700666844]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7472612885327188, 0.2865161018682225, 0.6912876255488063]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8037547070360611, 0.8092557424842204, 0.41130939462445526`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6081134630816507, 0.8608856052121536, 0.6690906100490126]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.060324073922686905`, 0.03238326759109311, 0.05723130185235359]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.24371869577073557`, 0.8419727552120191, 0.4179738882999229]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5897233247861771, 0.44792930114060736`, 0.012982672244422178`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.13395592475970197`, 0.037594040188541955`, 0.7110336233050691]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9717189662407912, 0.23817718066511895`, 0.34266452427350513`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7718257828281727, 0.9036645258542637, 0.43238969180710085`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4199546177608866, 0.5089421643600625, 0.8841312552505285]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.633153171301797, 0.8164214813177293, 0.518306143240691]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9235834523370416, 0.8846197343664346, 0.9252485669948833]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9923783804720439, 0.8467512406619042, 0.27805819420164957`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8088546393965774, 0.2855538086831064, 0.0551329817869739]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.007330132849365567, 0.8429803718592059, 0.5158863534256668]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7372038055969237, 0.4595692068699495, 0.3220533908186136]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7948398792313864, 0.10823465149278189`, 0.22356440023702207`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.35641143245156237`, 0.206836924907007, 0.20456815134659134`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4689391121789699, 0.5705175185860369, 0.18058656442508192`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9392844657794095, 0.479406519061649, 0.2136124392242964]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6987349469655235, 0.33805844178273103`, 0.9057199871402084]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.34469056194237635`, 0.33236091554614466`, 0.8247119908565572]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6722974205464756, 0.7867036283187627, 0.23283894764488777`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.11444469981714867`, 0.2452092853072596, 0.18588698612624843`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6012677086227673, 0.9004648693927015, 0.5400937357569031]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5536794318660592, 0.6894031156310623, 0.5831186097833319]|>,
+    "RGBColorSwatchTemplate"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.893412052430335*^9, 3.893412065245715*^9}},
+ CellLabel->
+  "Out[356]=",ExpressionUUID->"50eda1e2-2f81-474b-ab14-005f3365c9e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"colorList", "[", 
+  RowBox[{"<|", "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893412049840314*^9, 3.8934120662261944`*^9}},
+ CellLabel->
+  "In[357]:=",ExpressionUUID->"5effdbbc-97ae-450d-9b85-a58ac7d843ec"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.33190707420647647`, 0.4961146699619987, 0.46143646444604425`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.020988213831472535`, 0.1928940484715811, 0.5379121107227027]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7198526436428059, 0.06687997495765408, 0.7865131333975575]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.21416761448177746`, 0.4617293627393022, 0.17600820709743825`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4241690136675975, 0.6422312397172802, 0.2711372406280157]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7434191091716451, 0.3518109343806892, 0.14009121759772247`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.974946982646405, 0.33512731347719815`, 0.9799322701270436]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4870379806892917, 0.20751709516803918`, 0.4088327515884762]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.10899681267223582`, 0.4794914826947847, 0.0593200397284015]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5185029751650512, 0.6658355087791075, 0.496937456241477]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.79947764316931, 0.5037862437367024, 0.7960615344289477]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9683011363480871, 0.22313725813633267`, 0.329578054698765]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6252640761180976, 0.691936179506107, 0.6538429544761573]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.25433070611988695`, 0.19055075401246602`, 0.05550118152890837]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.22918115803089445`, 0.8345263326205068, 0.8485285104976021]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.23651750668064375`, 0.6499255749452482, 0.13231650526676098`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.09323522581257615, 0.9050252452546945, 0.28981450863233493`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.3637668571698831, 0.706274375766617, 0.5734872701919256]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7008415956071303, 0.5217884144296057, 0.7374450241865484]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.14589634219981007`, 0.8994554981211984, 0.14998292494645638`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4948315031642083, 0.25526759904369056`, 0.15189844694552312`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6099564776198101, 0.22054376956627508`, 0.027311357445858553`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.02021749257008576, 0.13095496615272806`, 0.6427547938871903]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.07480897601784564, 0.4452473319527548, 0.2420781330259978]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8141229147617342, 0.7986288832115995, 0.5248638313382139]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5276516208059117, 0.6909481485240276, 0.738406476904516]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.17457808822542664`, 0.539346682682972, 0.8091452094545275]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4475183617867968, 0.7456872422490544, 0.05622488784047519]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6181587782914506, 0.485543121351826, 0.4251293372422791]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.043034904263433926`, 0.017202408552061677`, 0.7404582062316967]|>,
+    "RGBColorSwatchTemplate"]}], "}"}]], "Output",
+ CellChangeTimes->{3.893412066849244*^9},
+ CellLabel->
+  "Out[357]=",ExpressionUUID->"35317b43-e445-44c8-83f2-402516c262d4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"colorListAPIFunctionToDeploy", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<length\>\"", "->", 
+       RowBox[{"Restricted", "[", 
+        RowBox[{"\"\<Integer\>\"", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "100"}], "}"}]}], "]"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"RandomColor", "[", "#length", "]"}], "&"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8934120723012223`*^9, 3.8934121606705575`*^9}},
+ CellLabel->
+  "In[360]:=",ExpressionUUID->"7a7d95d5-7860-49c1-ae8f-54ab75c21473"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"colorListAPI", "=", 
+  RowBox[{
+  "CloudDeploy", "[", "colorListAPIFunctionToDeploy", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934121514318037`*^9, 3.893412170175169*^9}},
+ CellLabel->
+  "In[361]:=",ExpressionUUID->"ea5ff92e-b025-447f-ad65-f92bf41529bd"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/9af41b0b-b453-4f76-8b2d-c7a49eae4ad3\"\
+", "https://www.wolframcloud.com/obj/9af41b0b-b453-4f76-8b2d-c7a49eae4ad3"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/9af41b0b-b453-4f76-8b2d-c7a49eae4ad3"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893412171080945*^9},
+ CellLabel->
+  "Out[361]=",ExpressionUUID->"73dfb71d-d957-46e9-893b-d7687c11ba18"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  DynamicModuleBox[{Typeset`open = False}, 
+   TemplateBox[{"List", "ListIcon", 
+     GridBox[{{
+        RowBox[{
+          TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["List", "IconizedItem"]}]}, {
+        RowBox[{
+          TagBox["\"Length: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["30", "IconizedItem"]}]}, {
+        RowBox[{
+          TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["3648", "IconizedItem"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+      "Column", 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+     Dynamic[Typeset`open]},
+    "IconizedObject"]],
+  {
+   RGBColor[0.16598788644408935`, 0.12808061489318545`, 0.2063569107014933], 
+   RGBColor[0.6087963186871919, 0.2393023145434685, 0.6478825981104877], 
+   RGBColor[0.5445038495953831, 0.02598367877257135, 0.43288195796826834`], 
+   RGBColor[0.045064515514710024`, 0.7477750372516614, 0.0918536483480279], 
+   RGBColor[0.5541174593224611, 0.5100364134249651, 0.94484794868457], 
+   RGBColor[0.208480676601706, 0.676869560471345, 0.26043016810492037`], 
+   RGBColor[0.3140550390325023, 0.5734652721906741, 0.6214444403312325], 
+   RGBColor[0.4323305968785076, 0.6523910417310383, 0.7079360609104155], 
+   RGBColor[0.6612182356784595, 0.29975193943710066`, 0.05350396651877665], 
+   RGBColor[0.7031949149312655, 0.8251310971985033, 0.7021036289077756], 
+   RGBColor[0.21145187824931022`, 0.4588524352155834, 0.9043706326014544], 
+   RGBColor[0.4029548957217821, 0.8845318602942931, 0.3549496814821127], 
+   RGBColor[0.9607058333863303, 0.18671918170551027`, 0.21963368873891898`], 
+   RGBColor[0.47820068072694544`, 0.04606144887202057, 0.5225554075209271], 
+   RGBColor[0.9829708949113596, 0.3234078600346999, 0.5577625586589929], 
+   RGBColor[0.806817608322008, 0.9112997679277715, 0.6041914972825999], 
+   RGBColor[0.4705767752313794, 0.9204254998389705, 0.04872316612550587], 
+   RGBColor[0.09637102475229908, 0.21023344029247948`, 0.15620739143788942`], 
+   RGBColor[0.7726545367082889, 0.7551985035816979, 0.004315016445859854], 
+   RGBColor[0.42477889729485163`, 0.512184997400577, 0.7586179638437862], 
+   RGBColor[0.5112228246267168, 0.14463311479185625`, 0.5754507690932806], 
+   RGBColor[0.5556979260192692, 0.8116684887056596, 0.44166809990801537`], 
+   RGBColor[0.5236716821683711, 0.41438503859312603`, 0.8357059526279373], 
+   RGBColor[0.20924466906557004`, 0.8048157663545843, 0.12630783131119117`], 
+   RGBColor[0.7868248484450968, 0.6604287855768449, 0.6662148148958045], 
+   RGBColor[0.9712081263086332, 0.28295564902642156`, 0.09620097888682055], 
+   RGBColor[0.9489330667626865, 0.16267294047136405`, 0.2513927882829021], 
+   RGBColor[0.5463247481936349, 0.8235744826609392, 0.8082860106775016], 
+   RGBColor[0.8561674927589571, 0.22234012535492043`, 0.6160853863043012], 
+   RGBColor[0.61362173576281, 0.6538815013772026, 0.8899766067746457]},
+  SelectWithContents->True,
+  Selectable->False]], "Input",
+ CellChangeTimes->{{3.8934122033176517`*^9, 3.893412212007698*^9}},
+ CellLabel->
+  "In[363]:=",ExpressionUUID->"f3db591d-0a50-4ab8-997e-c8235576e724"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.16598788644408935`, 0.12808061489318545`, 0.2063569107014933]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6087963186871919, 0.2393023145434685, 0.6478825981104877]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5445038495953831, 0.02598367877257135, 0.43288195796826834`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.045064515514710024`, 0.7477750372516614, 0.0918536483480279]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5541174593224611, 0.5100364134249651, 0.94484794868457]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.208480676601706, 0.676869560471345, 0.26043016810492037`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.3140550390325023, 0.5734652721906741, 0.6214444403312325]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4323305968785076, 0.6523910417310383, 0.7079360609104155]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6612182356784595, 0.29975193943710066`, 0.05350396651877665]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7031949149312655, 0.8251310971985033, 0.7021036289077756]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.21145187824931022`, 0.4588524352155834, 0.9043706326014544]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4029548957217821, 0.8845318602942931, 0.3549496814821127]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9607058333863303, 0.18671918170551027`, 0.21963368873891898`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.47820068072694544`, 0.04606144887202057, 0.5225554075209271]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9829708949113596, 0.3234078600346999, 0.5577625586589929]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.806817608322008, 0.9112997679277715, 0.6041914972825999]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4705767752313794, 0.9204254998389705, 0.04872316612550587]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.09637102475229908, 0.21023344029247948`, 0.15620739143788942`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7726545367082889, 0.7551985035816979, 0.004315016445859854]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.42477889729485163`, 0.512184997400577, 0.7586179638437862]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5112228246267168, 0.14463311479185625`, 0.5754507690932806]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5556979260192692, 0.8116684887056596, 0.44166809990801537`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5236716821683711, 0.41438503859312603`, 0.8357059526279373]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.20924466906557004`, 0.8048157663545843, 0.12630783131119117`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7868248484450968, 0.6604287855768449, 0.6662148148958045]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9712081263086332, 0.28295564902642156`, 0.09620097888682055]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9489330667626865, 0.16267294047136405`, 0.2513927882829021]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5463247481936349, 0.8235744826609392, 0.8082860106775016]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8561674927589571, 0.22234012535492043`, 0.6160853863043012]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.61362173576281, 0.6538815013772026, 0.8899766067746457]|>,
+    "RGBColorSwatchTemplate"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8934122038554373`*^9, 3.8934122152352495`*^9}},
+ CellLabel->
+  "Out[363]=",ExpressionUUID->"90b576f7-51c7-44f0-b48f-a906817ff19b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"colorListAPI", ",", 
+   RowBox[{"{", 
+    RowBox[{"\"\<length\>\"", "->", "40"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.893412233472955*^9, 3.893412261045617*^9}},
+ CellLabel->
+  "In[365]:=",ExpressionUUID->"51567a2c-d35e-48cb-b604-bb8aebe817e8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5463353158529516, 0.7544010924895088, 0.12406725137009311`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.0033859282664618906`, 0.1765546134992566, 0.5221792945448778]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8236271780124655, 0.6491135245675277, 0.8741670851146017]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9688853110425433, 0.15388419740634718`, 0.44920846868066855`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.22444056918581512`, 0.12717847123533588`, 0.4751473152742163]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9719096515249956, 0.8042159049483764, 0.8189176457147953]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.23705536705119945`, 0.16355786941781414`, 0.6227636368274281]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5529735893283103, 0.47930801744297846`, 0.4473326648214584]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.539864689156828, 0.43617127267787326`, 0.03237220224065762]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7694216274668091, 0.8214119984711783, 0.5356116445930745]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7841269423942745, 0.4886406639972465, 0.9904332432515184]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9646885999002861, 0.7219452851558419, 0.8938705613603688]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.484006343494525, 0.5912295045717006, 0.9430362152946052]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.15983228082294954`, 0.45083619015204923`, 0.8485335117857462]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.855737237272373, 0.19611165699567046`, 0.8242904099432538]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.3780085455802218, 0.9896817848325461, 0.8100604305439529]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8211247118973959, 0.9394093465839113, 0.32253918417000405`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.2323237930016253, 0.556313535047787, 0.49242919632372373`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5768829336674286, 0.3516394069194102, 0.2934383086899741]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6671770466012834, 0.5006555212162722, 0.27677739467743057`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8473351864602512, 0.9342883958105381, 0.26834778136750526`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8397970858518138, 0.004842456588352695, 0.5173065655633231]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.15334203094815124`, 0.5311280086936592, 0.2783254239031179]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4613425043669077, 0.2097244063748096, 0.19998445326660175`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7937943559330756, 0.5016237075680363, 0.7628370304492584]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5066083904999845, 0.3073114540216215, 0.008078422433126953]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5625593816245487, 0.7401541912518899, 0.4134030510290243]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.7031773537796724, 0.018002201775532134`, 0.3681977249261892]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.3615520147050957, 0.8509997347197269, 0.812928226996712]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.9372530672165857, 0.4247147935583231, 0.5581423538043244]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5485070011267639, 0.7346512060785186, 0.05737197665338378]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.6959896044092431, 0.11690562926932802`, 0.17587587521653325`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.4364971456534288, 0.5978356023710361, 0.19587051666079702`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.26294597069958203`, 0.044273743633859164`, 0.2699008078329437]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.06282426100625371, 0.4597967411923467, 0.34975054242684345`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.22264389433880116`, 0.5392088226188674, 0.2106314620102856]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.856238633424548, 0.04620470030761914, 0.3351629035279189]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.8987990804516899, 0.30495879794504965`, 0.45590540935115476`]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.15260392440724502`, 0.7197295183778978, 0.6777040805309711]|>,
+    "RGBColorSwatchTemplate"], ",", 
+   TemplateBox[<|
+    "color" -> RGBColor[
+      0.5052169753633609, 0.7678487646474605, 0.7275071961389787]|>,
+    "RGBColorSwatchTemplate"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.893412255762498*^9, 3.893412262167246*^9}},
+ CellLabel->
+  "Out[365]=",ExpressionUUID->"c114a993-5076-491b-af42-262f184e7e77"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"distanceFromEarthToSunAPIFunction", "=", 
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<date\>\"", "\[Rule]", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<Date\>\""}], ",", " ", 
+         RowBox[{"\"\<Default\>\"", ":>", " ", 
+          RowBox[{"DateObject", "[", "]"}]}]}], "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"UnitConvert", "[", 
+       RowBox[{
+        RowBox[{"AstroDistance", "[", 
+         RowBox[{
+          TemplateBox[{"\"Earth\"", 
+            RowBox[{"Entity", "[", 
+              RowBox[{"\"Planet\"", ",", "\"Earth\""}], "]"}], 
+            "\"Entity[\\\"Planet\\\", \\\"Earth\\\"]\"", "\"planet\""},
+           "Entity"], ",", 
+          RowBox[{"Dated", "[", 
+           RowBox[{
+            TemplateBox[{"\"Sun\"", 
+              RowBox[{"Entity", "[", 
+                RowBox[{"\"Star\"", ",", "\"Sun\""}], "]"}], 
+              "\"Entity[\\\"Star\\\", \\\"Sun\\\"]\"", "\"star\""},
+             "Entity"], ",", "#date"}], "]"}]}], "]"}], ",", 
+        "\"\<Gigameters\>\""}], "]"}], "&"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8934123030020533`*^9, 3.8934123287500753`*^9}, 
+   3.8934134702826595`*^9},
+ CellLabel->"In[13]:=",ExpressionUUID->"e0fc0e8c-3895-4066-9275-7cce3199a144"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"distanceFromEarthToSunAPIFunction", "[", 
+  RowBox[{"<|", 
+   RowBox[{"\"\<date\>\"", "->", "Now"}], "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.893412331027522*^9, 3.893412335372818*^9}, {
+  3.893412462443556*^9, 3.8934124649650497`*^9}, {3.893413645922098*^9, 
+  3.8934136462380977`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"6a43fcea-d74f-4d05-8965-8e3b47f572ad"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The API could not be evaluated because the following \
+fields contain failures: \\\"date\\\".\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ValidationFailure\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The API could not be evaluated because the following \
+fields contain failures: \\\"date\\\".\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ValidationFailure\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Parameters\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{"\"date\"", "\[Rule]", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["Failure", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    FrameBox[
+                    StyleBox["\"\[WarningSign]\"", 
+                    Directive["Message", 35], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    GridBox[{{
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Enter a valid date.\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"InterpretationFailure\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Input: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TemplateBox[{
+                    RowBox[{"\"Thu 18 May 2023 11:47:26\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2023", ",", "5", ",", "18", ",", "11", ",", "47",
+                     ",", "26.5390507`9.176460302366978"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False], "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    FrameBox[
+                    StyleBox["\"\[WarningSign]\"", 
+                    Directive["Message", 35], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    GridBox[{{
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Enter a valid date.\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"InterpretationFailure\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Input: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TemplateBox[{
+                    RowBox[{"\"Thu 18 May 2023 11:47:26\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2023", ",", "5", ",", "18", ",", "11", ",", "47",
+                     ",", "26.5390507`9.176460302366978"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False], "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    Failure[
+                    "InterpretationFailure", <|
+                    "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+                    "MessageParameters" -> <|
+                    "Input" -> 
+                    DateObject[{
+                    2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+                    "Instant", "Gregorian", -4.]|>, "Input" -> 
+                    DateObject[{
+                    2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+                    "Instant", "Gregorian", -4.]|>], Selectable -> False, 
+                    Editable -> False, SelectWithContents -> True]}], 
+                    "\[RightAssociation]"}], HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"FormObject\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   InterpretationBox[
+                    TagBox[
+                    GridBox[{{
+                    ItemBox[
+                    TagBox[
+                    StyleBox["\"date\"", "FormLabel", StripOnInput -> False], 
+                    Annotation[#, "date", "HTMLLabel"]& ], Alignment -> Right,
+                     StripOnInput -> False], 
+                    TagBox[
+                    TagBox[
+                    
+                    DynamicModuleBox[{
+                    Typeset`i$$ = 
+                    "DateObject[{2023, 5, 18, 11, 47, 26.5390507}, Instant, \
+Gregorian, -4.]"}, 
+                    InputFieldBox[
+                    Dynamic[Typeset`i$$], String, FieldHint -> Null, 
+                    DefaultBaseStyle -> "FormField", DefaultFieldHintStyle -> 
+                    "FormFieldHint", FieldMasked -> False, Enabled -> 
+                    Automatic], DynamicModuleValues -> Automatic], InputField[
+                    Setting[#], String, FieldHint -> Null, DefaultBaseStyle -> 
+                    "FormField", DefaultFieldHintStyle -> "FormFieldHint", 
+                    FieldMasked -> False, Enabled -> Automatic]& ], 
+                    Annotation[#, {
+                    "date", "data-field-name" -> "Date", "data-field-type" -> 
+                    "Semantic", "data-field-verbose" -> "date", 
+                    "data-field-examples" -> 
+                    "9 March 2013||11/20/1982||today||in 1990||20100410", 
+                    "data-field-prompt" -> 
+                    "Enter a date||(or anything indicating one)"}, 
+                    "HTMLControl"]& ]}, {"\"\"", 
+                    StyleBox[
+                    TagBox[
+                    "\"Enter a valid date.\"", 
+                    Annotation[#, {"p", "class" -> "help-block help-error"}, 
+                    "HTMLAttrs"]& ], "FormFailure", StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    "ControlStyle", ShowStringCharacters -> False}], "Grid"], 
+                    
+                    FormObject[<|
+                    "date" -> <|
+                    "Disambiguation" -> None, "Interpreter" -> "Date", 
+                    "Default" :> DateObject[], "Input" -> 
+                    DateObject[{
+                    2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+                    "Instant", "Gregorian", -4.]|>|>, <|
+                    "date" -> Failure[
+                    "InterpretationFailure", <|
+                    "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+                    "MessageParameters" -> <|
+                    "Input" -> 
+                    DateObject[{
+                    2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+                    "Instant", "Gregorian", -4.]|>, "Input" -> 
+                    DateObject[{
+                    2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+                    "Instant", "Gregorian", -4.]|>]|>]], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Fields\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{"\"date\"", "\[Rule]", 
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"AllowedExtensions\"", "\[Rule]", 
+                    RowBox[{"{", "\"json\"", "}"}]}], ",", 
+                    RowBox[{"\"AutoSubmitting\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"CodeLanguage\"", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"\"Default\"", "\[Rule]", 
+                    TemplateBox[{
+                    RowBox[{"\"Thu 18 May 2023 11:47:26\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2023", ",", "5", ",", "18", ",", "11", ",", "47",
+                     ",", "26.5470843`9.17659174716613"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False]}], ",", 
+                    RowBox[{"\"Enabled\"", "\[Rule]", "True"}], ",", 
+                    RowBox[{"\"Failure\"", "\[Rule]", 
+                    TagBox[
+                    "\"Enter a valid date.\"", 
+                    Annotation[#, {"p", "class" -> "help-block help-error"}, 
+                    "HTMLAttrs"]& ]}], ",", 
+                    RowBox[{"\"Help\"", "\[Rule]", "None"}], ",", 
+                    RowBox[{"\"Hidden\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Hint\"", "\[Rule]", "Null"}], ",", 
+                    RowBox[{"\"Input\"", "\[Rule]", 
+                    TemplateBox[{
+                    RowBox[{"\"Thu 18 May 2023 11:47:26\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"2023", ",", "5", ",", "18", ",", "11", ",", "47",
+                     ",", "26.5390507`9.176460302366978"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False]}], ",", 
+                    RowBox[{"\"Interpreter\"", "\[Rule]", "\"Date\""}], ",", 
+                    RowBox[{"\"Label\"", "\[Rule]", 
+                    TagBox[
+                    "\"date\"", Annotation[#, "date", "HTMLLabel"]& ]}], ",", 
+                    RowBox[{"\"Required\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Type\"", "\[Rule]", "\"Element\""}]}], 
+                    "\[RightAssociation]"}]}], "\[RightAssociation]"}], 
+                   HoldForm], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure[
+  "ValidationFailure", <|
+   "MessageTemplate" :> MessageName[APIFunction, "failurefields"], 
+    "Parameters" -> <|
+     "date" -> Failure[
+       "InterpretationFailure", <|
+        "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+         "MessageParameters" -> <|
+          "Input" -> DateObject[{
+             2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, "Instant", 
+             "Gregorian", -4.]|>, "Input" -> 
+         DateObject[{2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+           "Instant", "Gregorian", -4.]|>]|>, "FormObject" -> 
+    FormObject[<|
+      "date" -> <|
+        "Disambiguation" -> None, "Interpreter" -> "Date", "Default" :> 
+         DateObject[], "Input" -> 
+         DateObject[{2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+           "Instant", "Gregorian", -4.]|>|>, <|
+      "date" -> Failure[
+        "InterpretationFailure", <|
+         "MessageTemplate" :> MessageName[Interpreter, "dateobj"], 
+          "MessageParameters" -> <|
+           "Input" -> DateObject[{
+              2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, "Instant", 
+              "Gregorian", -4.]|>, "Input" -> 
+          DateObject[{2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, 
+            "Instant", "Gregorian", -4.]|>]|>], 
+    "Fields" -> <|
+     "date" -> <|
+       "AllowedExtensions" -> {"json"}, "AutoSubmitting" -> False, 
+        "CodeLanguage" -> Automatic, "Default" -> 
+        DateObject[{2023, 5, 18, 11, 47, 26.5470843`9.17659174716613}, 
+          "Instant", "Gregorian", -4.], "Enabled" -> True, "Failure" -> 
+        Annotation[
+         "Enter a valid date.", {"p", "class" -> "help-block help-error"}, 
+          "HTMLAttrs"], "Help" -> None, "Hidden" -> False, "Hint" -> Null, 
+        "Input" -> DateObject[{
+          2023, 5, 18, 11, 47, 26.5390507`9.176460302366978}, "Instant", 
+          "Gregorian", -4.], "Interpreter" -> "Date", "Label" -> 
+        Annotation["date", "date", "HTMLLabel"], "Required" -> False, "Type" -> 
+        "Element"|>|>, 
+    "MessageParameters" -> <|"FailureFields" -> "\"date\""|>|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.893412335940909*^9, 3.8934124655190163`*^9, {3.8934134613145585`*^9, 
+   3.893413473140723*^9}, 3.8934136467830505`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"6a3d5976-6634-4f09-be60-7296f4620c86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dateFunc", "=", 
+  RowBox[{"APIFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<date\>\"", "\[Rule]", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Interpreter\>\"", "->", "\"\<DateTime\>\""}], ",", " ", 
+        RowBox[{"\"\<Default\>\"", ":>", " ", 
+         RowBox[{"DateObject", "[", "]"}]}]}], "|>"}]}], "}"}], ",", "f"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934124416607685`*^9, 3.89341244512589*^9}, {
+  3.8934124804025383`*^9, 3.8934124819060907`*^9}},
+ CellLabel->
+  "In[373]:=",ExpressionUUID->"f7e1f3e2-b4a3-4d3d-b2ed-c4a2f67137c7"],
+
+Cell[BoxData[
+ RowBox[{"APIFunction", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"date\"\>", "\[Rule]", 
+     RowBox[{"\[LeftAssociation]", 
+      RowBox[{
+       RowBox[{"\<\"Interpreter\"\>", "\[Rule]", "\<\"DateTime\"\>"}], ",", 
+       RowBox[{"\<\"Default\"\>", "\[RuleDelayed]", 
+        RowBox[{"DateObject", "[", "]"}]}]}], "\[RightAssociation]"}]}], 
+    "}"}], ",", "f"}], "]"}]], "Output",
+ CellChangeTimes->{3.8934124457170076`*^9, 3.8934124823541346`*^9},
+ CellLabel->
+  "Out[373]=",ExpressionUUID->"6c020fe5-a4d8-4cdd-8da6-d76f669caac8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dateFunc", "[", 
+  RowBox[{"<|", 
+   RowBox[{"\"\<date\>\"", "->", "None"}], "|>"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934124513870707`*^9, 3.893412476053379*^9}},
+ CellLabel->
+  "In[374]:=",ExpressionUUID->"649fe93c-6aa2-4f23-b178-794ea5601d76"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The API could not be evaluated because the following \
+fields contain failures: \\\"date\\\".\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ValidationFailure\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"The API could not be evaluated because the following \
+fields contain failures: \\\"date\\\".\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               TagBox[
+                GridBox[{{
+                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"ValidationFailure\"", "SummaryItem"]}}, 
+                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Parameters\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{"\"date\"", "\[Rule]", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["Failure", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    FrameBox[
+                    StyleBox["\"\[WarningSign]\"", 
+                    Directive["Message", 35], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    GridBox[{{
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"Enter a full date and time.\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"InterpretationFailure\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Input: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["None", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    FrameBox[
+                    StyleBox["\"\[WarningSign]\"", 
+                    Directive["Message", 35], StripOnInput -> False], 
+                    ContentPadding -> False, FrameStyle -> None, 
+                    FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+                    GridBox[{{
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Message: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    "\"Enter a full date and time.\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"InterpretationFailure\"", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}, {
+                    TagBox[
+                    GridBox[{{
+                    TagBox["\"Input: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["None", "SummaryItem"]}}, 
+                    GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}}], 
+                    "SummaryItem"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    Failure[
+                    "InterpretationFailure", <|
+                    "MessageTemplate" :> 
+                    MessageName[Interpreter, "datetimeobj"], 
+                    "MessageParameters" -> <|"Input" -> None|>, "Input" -> 
+                    None|>], Selectable -> False, Editable -> False, 
+                    SelectWithContents -> True]}], "\[RightAssociation]"}], 
+                   HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"FormObject\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   InterpretationBox[
+                    TagBox[
+                    GridBox[{{
+                    ItemBox[
+                    TagBox[
+                    StyleBox["\"date\"", "FormLabel", StripOnInput -> False], 
+                    Annotation[#, "date", "HTMLLabel"]& ], Alignment -> Right,
+                     StripOnInput -> False], 
+                    TagBox[
+                    TagBox[
+                    DynamicModuleBox[{Typeset`i$$ = "None"}, 
+                    InputFieldBox[
+                    Dynamic[Typeset`i$$], String, FieldHint -> Null, 
+                    DefaultBaseStyle -> "FormField", DefaultFieldHintStyle -> 
+                    "FormFieldHint", FieldMasked -> False, Enabled -> 
+                    Automatic], DynamicModuleValues -> Automatic], InputField[
+                    Setting[#], String, FieldHint -> Null, DefaultBaseStyle -> 
+                    "FormField", DefaultFieldHintStyle -> "FormFieldHint", 
+                    FieldMasked -> False, Enabled -> Automatic]& ], 
+                    Annotation[#, {
+                    "date", "data-field-name" -> "DateTime", 
+                    "data-field-type" -> "Semantic", "data-field-verbose" -> 
+                    "date with time", "data-field-examples" -> 
+                    "11/20/1982 11:10||now||Friday, February 28, 2014, \
+10:30:00 AM GMT", "data-field-prompt" -> 
+                    "Enter a date with time||(or anything indicating one)"}, 
+                    "HTMLControl"]& ]}, {"\"\"", 
+                    StyleBox[
+                    TagBox[
+                    "\"Enter a full date and time.\"", 
+                    Annotation[#, {"p", "class" -> "help-block help-error"}, 
+                    "HTMLAttrs"]& ], "FormFailure", StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    "ControlStyle", ShowStringCharacters -> False}], "Grid"], 
+                    
+                    FormObject[<|
+                    "date" -> <|
+                    "Disambiguation" -> None, "Interpreter" -> "DateTime", 
+                    "Default" :> DateObject[], "Input" -> None|>|>, <|
+                    "date" -> Failure[
+                    "InterpretationFailure", <|
+                    "MessageTemplate" :> 
+                    MessageName[Interpreter, "datetimeobj"], 
+                    "MessageParameters" -> <|"Input" -> None|>, "Input" -> 
+                    None|>]|>]], HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Fields\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"\[LeftAssociation]", 
+                    RowBox[{"\"date\"", "\[Rule]", 
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    RowBox[{"\"AllowedExtensions\"", "\[Rule]", 
+                    RowBox[{"{", "\"json\"", "}"}]}], ",", 
+                    RowBox[{"\"AutoSubmitting\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"CodeLanguage\"", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"\"Default\"", "\[Rule]", 
+                    TemplateBox[{
+                    RowBox[{"\"Thu 18 May 2023 11:28:03\"", 
+                    StyleBox[
+                    RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+                    StyleBox[
+                    RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> 
+                    False]}], FontColor -> GrayLevel[0.5]]}], 
+                    RowBox[{"DateObject", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"2023", ",", "5", ",", "18", ",", "11", ",", "28",
+                     ",", "3.6299699`8.312478004823914"}], "}"}], ",", 
+                    "\"Instant\"", ",", "\"Gregorian\"", ",", 
+                    RowBox[{"-", "4.`"}]}], "]"}]}, "DateObject", Editable -> 
+                    False]}], ",", 
+                    RowBox[{"\"Enabled\"", "\[Rule]", "True"}], ",", 
+                    RowBox[{"\"Failure\"", "\[Rule]", 
+                    TagBox[
+                    "\"Enter a full date and time.\"", 
+                    Annotation[#, {"p", "class" -> "help-block help-error"}, 
+                    "HTMLAttrs"]& ]}], ",", 
+                    RowBox[{"\"Help\"", "\[Rule]", "None"}], ",", 
+                    RowBox[{"\"Hidden\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Hint\"", "\[Rule]", "Null"}], ",", 
+                    RowBox[{"\"Input\"", "\[Rule]", "None"}], ",", 
+                    RowBox[{"\"Interpreter\"", "\[Rule]", "\"DateTime\""}], 
+                    ",", 
+                    RowBox[{"\"Label\"", "\[Rule]", 
+                    TagBox[
+                    "\"date\"", Annotation[#, "date", "HTMLLabel"]& ]}], ",", 
+                    RowBox[{"\"Required\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Type\"", "\[Rule]", "\"Element\""}]}], 
+                    "\[RightAssociation]"}]}], "\[RightAssociation]"}], 
+                   HoldForm], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure[
+  "ValidationFailure", <|
+   "MessageTemplate" :> MessageName[APIFunction, "failurefields"], 
+    "Parameters" -> <|
+     "date" -> Failure[
+       "InterpretationFailure", <|
+        "MessageTemplate" :> MessageName[Interpreter, "datetimeobj"], 
+         "MessageParameters" -> <|"Input" -> None|>, "Input" -> None|>]|>, 
+    "FormObject" -> 
+    FormObject[<|
+      "date" -> <|
+        "Disambiguation" -> None, "Interpreter" -> "DateTime", "Default" :> 
+         DateObject[], "Input" -> None|>|>, <|
+      "date" -> Failure[
+        "InterpretationFailure", <|
+         "MessageTemplate" :> MessageName[Interpreter, "datetimeobj"], 
+          "MessageParameters" -> <|"Input" -> None|>, "Input" -> None|>]|>], 
+    "Fields" -> <|
+     "date" -> <|
+       "AllowedExtensions" -> {"json"}, "AutoSubmitting" -> False, 
+        "CodeLanguage" -> Automatic, "Default" -> 
+        DateObject[{2023, 5, 18, 11, 28, 3.6299699`8.312478004823914}, 
+          "Instant", "Gregorian", -4.], "Enabled" -> True, "Failure" -> 
+        Annotation[
+         "Enter a full date and time.", {
+          "p", "class" -> "help-block help-error"}, "HTMLAttrs"], "Help" -> 
+        None, "Hidden" -> False, "Hint" -> Null, "Input" -> None, 
+        "Interpreter" -> "DateTime", "Label" -> 
+        Annotation["date", "date", "HTMLLabel"], "Required" -> False, "Type" -> 
+        "Element"|>|>, 
+    "MessageParameters" -> <|"FailureFields" -> "\"date\""|>|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.8934124551541624`*^9, 3.893412483866969*^9}},
+ CellLabel->
+  "Out[374]=",ExpressionUUID->"094d9d91-cffc-494c-a75e-e1a4a0638c4d"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9f5de93d-b8b1-481b-a530-a42f5995b4c5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 429, 11, 28, "Input",ExpressionUUID->"63b48342-ef42-4f72-8861-0e9ca430d5fb"],
+Cell[CellGroupData[{
+Cell[1012, 35, 278, 6, 28, "Input",ExpressionUUID->"7548f7ad-9eac-47a1-befb-2c2ac6eaa83c"],
+Cell[1293, 43, 242, 5, 52, "Output",ExpressionUUID->"aef1fcb3-1d92-424e-8e81-e4b243c64304"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1572, 53, 682, 17, 39, "Input",ExpressionUUID->"d30acd16-5488-4143-badd-3e50b7bf5cc1"],
+Cell[2257, 72, 264, 7, 36, "Output",ExpressionUUID->"40478422-9197-40c4-90cc-f075124565b1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2558, 84, 792, 20, 67, "Input",ExpressionUUID->"8b446f0f-3e45-4aa1-8c77-b7b385c84f05"],
+Cell[3353, 106, 243, 5, 36, "Output",ExpressionUUID->"151d5283-5054-4816-9c40-20bf35eaf4e0"]
+}, Open  ]],
+Cell[3611, 114, 1191, 29, 117, "Input",ExpressionUUID->"255790ab-2f94-43b4-b613-1c5baf0eee7c"],
+Cell[CellGroupData[{
+Cell[4827, 147, 249, 5, 28, "Input",ExpressionUUID->"b779b724-c165-4c76-8059-47f008db192b"],
+Cell[5079, 154, 18754, 357, 85, "Output",ExpressionUUID->"de2c9397-ed1f-430a-b7d8-465f6b3d68f3"]
+}, Open  ]],
+Cell[23848, 514, 608, 17, 86, "Input",ExpressionUUID->"e067987b-e5e4-4069-85ed-a144cfc84ee5"],
+Cell[CellGroupData[{
+Cell[24481, 535, 233, 5, 28, "Input",ExpressionUUID->"46bd6dd5-fd86-4b62-aee0-d0459b442f24"],
+Cell[24717, 542, 4723, 125, 52, "Output",ExpressionUUID->"50eda1e2-2f81-474b-ab14-005f3365c9e3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29477, 672, 233, 5, 28, "Input",ExpressionUUID->"5effdbbc-97ae-450d-9b85-a58ac7d843ec"],
+Cell[29713, 679, 4700, 125, 52, "Output",ExpressionUUID->"35317b43-e445-44c8-83f2-402516c262d4"]
+}, Open  ]],
+Cell[34428, 807, 603, 16, 67, "Input",ExpressionUUID->"7a7d95d5-7860-49c1-ae8f-54ab75c21473"],
+Cell[CellGroupData[{
+Cell[35056, 827, 279, 6, 28, "Input",ExpressionUUID->"ea5ff92e-b025-447f-ad65-f92bf41529bd"],
+Cell[35338, 835, 522, 12, 85, "Output",ExpressionUUID->"73dfb71d-d957-46e9-893b-d7687c11ba18"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35897, 852, 3251, 55, 35, "Input",ExpressionUUID->"f3db591d-0a50-4ab8-997e-c8235576e724"],
+Cell[39151, 909, 4719, 125, 52, "Output",ExpressionUUID->"90b576f7-51c7-44f0-b48f-a906817ff19b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43907, 1039, 310, 7, 28, "Input",ExpressionUUID->"51567a2c-d35e-48cb-b604-bb8aebe817e8"],
+Cell[44220, 1048, 6228, 165, 71, "Output",ExpressionUUID->"c114a993-5076-491b-af42-262f184e7e77"]
+}, Open  ]],
+Cell[50463, 1216, 1345, 32, 155, "Input",ExpressionUUID->"e0fc0e8c-3895-4066-9275-7cce3199a144"],
+Cell[CellGroupData[{
+Cell[51833, 1252, 396, 7, 28, "Input",ExpressionUUID->"6a43fcea-d74f-4d05-8965-8e3b47f572ad"],
+Cell[52232, 1261, 23161, 444, 85, "Output",ExpressionUUID->"6a3d5976-6634-4f09-be60-7296f4620c86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75430, 1710, 606, 15, 86, "Input",ExpressionUUID->"f7e1f3e2-b4a3-4d3d-b2ed-c4a2f67137c7"],
+Cell[76039, 1727, 558, 13, 52, "Output",ExpressionUUID->"6c020fe5-a4d8-4cdd-8da6-d76f669caac8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76634, 1745, 276, 6, 28, "Input",ExpressionUUID->"649fe93c-6aa2-4f23-b178-794ea5601d76"],
+Cell[76913, 1753, 19300, 369, 85, "Output",ExpressionUUID->"094d9d91-cffc-494c-a75e-e1a4a0638c4d"]
+}, Open  ]]
+}
+]
+*)
+
