@@ -1,0 +1,171 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5809,        163]
+NotebookOptionsPosition[      4466,        132]
+NotebookOutlinePosition[      4888,        148]
+CellTagsIndexPosition[      4845,        145]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"CloudPut", "[", 
+  RowBox[{"\"\<The combination is 36-52-01\>\"", ",", 
+   RowBox[{"Permissions", "->", 
+    RowBox[{
+     RowBox[{"PermissionsKey", "[", "\"\<MrBean\>\"", "]"}], "->", 
+     "\"\<Read\>\""}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934147842731295`*^9, 3.893414804314355*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"7dac1449-6eae-4519-9cce-7b8b46c1a13f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/b4baf763-f5d4-45f7-bf09-7da0a3c4d899\"\
+", "https://www.wolframcloud.com/obj/b4baf763-f5d4-45f7-bf09-7da0a3c4d899"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/b4baf763-f5d4-45f7-bf09-7da0a3c4d899"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.893414804796332*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"7caf0429-61f9-4800-b9b5-455f00cb6278"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/b4baf763-f5d4-45f7-bf09-\
+7da0a3c4d899\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[44]:=",ExpressionUUID->"0b765485-4624-40e8-a70b-f1519e4a1ecb"],
+
+Cell[CellGroupData[{
+
+Cell["Create a cloud object", "Section",
+ CellChangeTimes->{{3.8934148978092904`*^9, 
+  3.8934149020532007`*^9}},ExpressionUUID->"82bd9f52-d03f-4838-b761-\
+7b2bffc07399"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"obj", "=", 
+  RowBox[{"CloudDeploy", "[", 
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", "\"\<City\>\""}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"GeoGraphics", "[", "#city", "]"}], "&"}]}], "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8934148884821987`*^9, 3.893414920791267*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"3f62f88f-2bc3-44d7-949e-fa26109d94cd"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/80a5c114-03ee-4771-9cb8-2f03dbd61fd6\"\
+", "https://www.wolframcloud.com/obj/80a5c114-03ee-4771-9cb8-2f03dbd61fd6"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/80a5c114-03ee-4771-9cb8-2f03dbd61fd6"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8934149220174475`*^9},
+ CellLabel->"Out[45]=",ExpressionUUID->"9c36e61d-1292-465c-a5b5-de57b6c1f98f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{"obj", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+  "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[47]:=",ExpressionUUID->"12f66ec2-c893-4df1-a9bf-429bf2dcc326"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetPermissions", "[", 
+  RowBox[{"obj", ",", 
+   RowBox[{
+    RowBox[{"PermissionsKey", "[", "\"\<MrBean\>\"", "]"}], "->", 
+    "\"\<Execute\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934149267888436`*^9, 3.8934149385751843`*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"f09eed66-d1ef-43d9-a6c8-3795feac5cf5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"PermissionsKey", "[", "\<\"MrBean\"\>", "]"}], "\[Rule]", 
+    RowBox[{"{", "\<\"Execute\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"Owner\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"Read\"\>", ",", "\<\"Write\"\>", ",", "\<\"Execute\"\>"}], 
+     "}"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{3.893414940151696*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"8fe74017-51ea-4721-9ad2-3bf552809e4a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"DeletePermissionsKey", "[", 
+  RowBox[{"PermissionsKey", "[", "\"\<MrBean\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8934149804930983`*^9, 3.893414990796033*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"3fb3e8bd-c97c-4ab0-82cf-82696a5da2b9"]
+}, Open  ]]
+},
+WindowSize->{574.8, 574.8},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a4ae07b3-ebc8-47f0-8f0e-6eee2464c75c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 400, 8, 48, "Input",ExpressionUUID->"7dac1449-6eae-4519-9cce-7b8b46c1a13f"],
+Cell[983, 32, 518, 11, 85, "Output",ExpressionUUID->"7caf0429-61f9-4800-b9b5-455f00cb6278"]
+}, Open  ]],
+Cell[1516, 46, 365, 9, 86, "Input",ExpressionUUID->"0b765485-4624-40e8-a70b-f1519e4a1ecb"],
+Cell[CellGroupData[{
+Cell[1906, 59, 170, 3, 67, "Section",ExpressionUUID->"82bd9f52-d03f-4838-b761-7b2bffc07399"],
+Cell[CellGroupData[{
+Cell[2101, 66, 448, 11, 48, "Input",ExpressionUUID->"3f62f88f-2bc3-44d7-949e-fa26109d94cd"],
+Cell[2552, 79, 520, 11, 85, "Output",ExpressionUUID->"9c36e61d-1292-465c-a5b5-de57b6c1f98f"]
+}, Open  ]],
+Cell[3087, 93, 240, 5, 28, "Input",ExpressionUUID->"12f66ec2-c893-4df1-a9bf-429bf2dcc326"],
+Cell[CellGroupData[{
+Cell[3352, 102, 341, 7, 28, "Input",ExpressionUUID->"f09eed66-d1ef-43d9-a6c8-3795feac5cf5"],
+Cell[3696, 111, 465, 11, 52, "Output",ExpressionUUID->"8fe74017-51ea-4721-9ad2-3bf552809e4a"]
+}, Open  ]],
+Cell[4176, 125, 274, 4, 84, "Input",ExpressionUUID->"3fb3e8bd-c97c-4ab0-82cf-82696a5da2b9"]
+}, Open  ]]
+}
+]
+*)
+
